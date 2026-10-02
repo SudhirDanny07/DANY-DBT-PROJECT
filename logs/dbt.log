@@ -1,0 +1,1347 @@
+[0m22:28:05.269557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002090E1A3920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002090A4AAF60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002090C129BB0>]}
+
+
+============================== 22:28:06.198731 | 996405c7-e019-4dbb-aea2-65c7c60ed0ed ==============================
+[0m22:28:06.198731 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:28:06.209729 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init', 'log_path': 'logs'}
+[0m22:28:08.374155 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\AVITA\.dbt
+[0m22:30:37.670688 [debug] [MainThread]: Starter project path: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\.venv\Lib\site-packages\dbt\include\starter_project
+[0m22:30:37.835875 [info ] [MainThread]: Setting up your profile.
+[0m22:30:49.317818 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m22:30:49.321224 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m22:30:49.323410 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m07:48:03.259354 [info ] [MainThread]: Profile Dbt_Dany_Project written to C:\Users\AVITA\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m07:48:03.680715 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m07:48:03.690060 [info ] [MainThread]: dbt version: 1.12.5
+[0m07:48:03.691067 [info ] [MainThread]: python version: 3.12.9
+[0m07:48:03.693363 [info ] [MainThread]: python path: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\.venv\Scripts\python.exe
+[0m07:48:03.694559 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m07:48:04.093254 [info ] [MainThread]: Using profiles dir at C:\Users\AVITA\.dbt
+[0m07:48:04.095531 [info ] [MainThread]: Using profiles.yml file at C:\Users\AVITA\.dbt\profiles.yml
+[0m07:48:04.096714 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\Dbt_Dany_Project\dbt_project.yml
+[0m07:48:04.098818 [info ] [MainThread]: adapter type: databricks
+[0m07:48:04.101921 [info ] [MainThread]: adapter version: 1.10.9
+[0m07:48:04.459272 [info ] [MainThread]: Configuration:
+[0m07:48:04.460567 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m07:48:04.461641 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m07:48:04.464117 [info ] [MainThread]: Required dependencies:
+[0m07:48:04.466185 [debug] [MainThread]: Executing "git --help"
+[0m07:48:04.601330 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:48:04.603465 [debug] [MainThread]: STDERR: "b''"
+[0m07:48:04.605465 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:48:04.606742 [info ] [MainThread]: Connection:
+[0m07:48:04.607904 [info ] [MainThread]:   host: dbc-4e85da0d-ae0e.cloud.databricks.com
+[0m07:48:04.609938 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/bd2d44a1b285f33b
+[0m07:48:04.610956 [info ] [MainThread]:   catalog: danny_dbt_dev
+[0m07:48:04.612994 [info ] [MainThread]:   schema: default
+[0m07:48:04.617230 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m07:48:07.721287 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m07:48:07.723341 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m07:48:07.725523 [debug] [MainThread]: Using databricks connection "debug"
+[0m07:48:07.727921 [debug] [MainThread]: On debug: select 1 as id
+[0m07:48:07.729059 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:48:11.785809 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bc75-2e84-1fd2-ac9d-5c2d78d93ce2) - Created
+[0m07:48:19.663576 [debug] [MainThread]: SQL status: OK in 11.930 seconds
+[0m07:48:19.667594 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1bc75-2e84-1fd2-ac9d-5c2d78d93ce2, command-id=01f1bc75-2f85-1870-80b7-3f1a1dd46162) - Closing
+[0m07:48:20.273594 [debug] [MainThread]: On debug: Close
+[0m07:48:20.274596 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bc75-2e84-1fd2-ac9d-5c2d78d93ce2) - Closing
+[0m07:48:20.642399 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m07:48:20.644663 [info ] [MainThread]: [32mAll checks passed![0m
+[0m07:48:20.646771 [info ] [MainThread]: Your new dbt project "Dbt_Dany_Project" was created!
+Initialized new project in C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\Dbt_Dany_Project\Dbt_Dany_Project
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m07:48:20.656803 [debug] [MainThread]: Command `dbt init` succeeded at 07:48:20.654528 after 33624.65 seconds
+[0m07:48:20.660352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002090BB31250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002090C872870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002090C872990>]}
+[0m07:48:20.665214 [debug] [MainThread]: Flushing usage events
+[0m07:48:22.645542 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:45:15.703875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029345D5F6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002934915D760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293476A6B70>]}
+
+
+============================== 09:45:15.716062 | 847cb5d3-da0c-4541-9204-c0079d6ce508 ==============================
+[0m09:45:15.716062 [info ] [MainThread]: Running with dbt=1.12.5
+[0m09:45:15.718220 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m09:45:15.808620 [info ] [MainThread]: dbt version: 1.12.5
+[0m09:45:15.809621 [info ] [MainThread]: python version: 3.12.9
+[0m09:45:15.810621 [info ] [MainThread]: python path: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\.venv\Scripts\python.exe
+[0m09:45:15.811621 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m09:45:23.847605 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m09:45:23.849673 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m09:45:23.850676 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m09:45:29.716780 [info ] [MainThread]: Using profiles dir at C:\Users\AVITA\.dbt
+[0m09:45:29.717783 [info ] [MainThread]: Using profiles.yml file at C:\Users\AVITA\.dbt\profiles.yml
+[0m09:45:29.719207 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\dbt_project.yml
+[0m09:45:29.720211 [info ] [MainThread]: adapter type: databricks
+[0m09:45:29.721339 [info ] [MainThread]: adapter version: 1.10.9
+[0m09:45:29.722342 [info ] [MainThread]: Configuration:
+[0m09:45:29.723346 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:45:29.725462 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:45:29.726464 [info ] [MainThread]: Required dependencies:
+[0m09:45:29.728562 [debug] [MainThread]: Executing "git --help"
+[0m09:45:29.805000 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:45:29.806135 [debug] [MainThread]: STDERR: "b''"
+[0m09:45:29.807139 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:45:29.807139 [info ] [MainThread]: Connection:
+[0m09:45:29.808327 [info ] [MainThread]:   host: dbc-4e85da0d-ae0e.cloud.databricks.com
+[0m09:45:29.808327 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/bd2d44a1b285f33b
+[0m09:45:29.809334 [info ] [MainThread]:   catalog: danny_dbt_dev
+[0m09:45:29.809334 [info ] [MainThread]:   schema: default
+[0m09:45:29.810341 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m09:45:31.518274 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m09:45:31.519595 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m09:45:31.520655 [debug] [MainThread]: Using databricks connection "debug"
+[0m09:45:31.521670 [debug] [MainThread]: On debug: select 1 as id
+[0m09:45:31.522738 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:45:34.536707 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bc85-944d-1c6e-b30c-30437698d188) - Created
+[0m09:45:42.494029 [debug] [MainThread]: SQL status: OK in 10.970 seconds
+[0m09:45:42.496040 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1bc85-944d-1c6e-b30c-30437698d188, command-id=01f1bc85-9554-1803-b6d1-cf2e74f2fd46) - Closing
+[0m09:45:42.991571 [debug] [MainThread]: On debug: Close
+[0m09:45:42.992699 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bc85-944d-1c6e-b30c-30437698d188) - Closing
+[0m09:45:43.416426 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:45:43.417523 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:45:43.418530 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\dbt_project.yml> not found
+
+[0m09:45:43.421922 [debug] [MainThread]: Command `dbt debug` failed at 09:45:43.420893 after 28.10 seconds
+[0m09:45:43.421922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029345D5F6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002935D409340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000293499B28A0>]}
+[0m09:45:43.423211 [debug] [MainThread]: Flushing usage events
+[0m09:45:45.306469 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:12:50.336902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018943BDF6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000189455C1250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000189470667E0>]}
+
+
+============================== 10:12:50.347080 | 9da2d8b7-d0b5-41b1-aefc-a678ce42def7 ==============================
+[0m10:12:50.347080 [info ] [MainThread]: Running with dbt=1.12.5
+[0m10:12:50.349349 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m10:12:50.422029 [info ] [MainThread]: dbt version: 1.12.5
+[0m10:12:50.424036 [info ] [MainThread]: python version: 3.12.9
+[0m10:12:50.425102 [info ] [MainThread]: python path: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\.venv\Scripts\python.exe
+[0m10:12:50.426107 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m10:12:53.058647 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m10:12:53.059647 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m10:12:53.060647 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m10:12:56.117640 [info ] [MainThread]: Using profiles dir at C:\Users\AVITA\.dbt
+[0m10:12:56.118640 [info ] [MainThread]: Using profiles.yml file at C:\Users\AVITA\.dbt\profiles.yml
+[0m10:12:56.119641 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\dbt_project.yml
+[0m10:12:56.120641 [info ] [MainThread]: adapter type: databricks
+[0m10:12:56.121641 [info ] [MainThread]: adapter version: 1.10.9
+[0m10:12:56.122643 [info ] [MainThread]: Configuration:
+[0m10:12:56.123641 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:12:56.124644 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:12:56.125645 [info ] [MainThread]: Required dependencies:
+[0m10:12:56.126969 [debug] [MainThread]: Executing "git --help"
+[0m10:12:56.240413 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:12:56.241417 [debug] [MainThread]: STDERR: "b''"
+[0m10:12:56.242484 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:12:56.243489 [info ] [MainThread]: Connection:
+[0m10:12:56.244494 [info ] [MainThread]:   host: dbc-4e85da0d-ae0e.cloud.databricks.com
+[0m10:12:56.245800 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/bd2d44a1b285f33b
+[0m10:12:56.246864 [info ] [MainThread]:   catalog: danny_dbt_dev
+[0m10:12:56.247866 [info ] [MainThread]:   schema: default
+[0m10:12:56.249864 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m10:12:57.736331 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m10:12:57.737332 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m10:12:57.738342 [debug] [MainThread]: Using databricks connection "debug"
+[0m10:12:57.738342 [debug] [MainThread]: On debug: select 1 as id
+[0m10:12:57.738342 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:13:00.636780 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bc89-697d-1f6d-9a1a-0f509b48a8b9) - Created
+[0m10:13:12.222209 [debug] [MainThread]: SQL status: OK in 14.480 seconds
+[0m10:13:12.224357 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1bc89-697d-1f6d-9a1a-0f509b48a8b9, command-id=01f1bc89-6a79-1d09-b8f5-0f6cc271ccba) - Closing
+[0m10:13:12.687741 [debug] [MainThread]: On debug: Close
+[0m10:13:12.688742 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bc89-697d-1f6d-9a1a-0f509b48a8b9) - Closing
+[0m10:13:13.057930 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:13:13.058940 [info ] [MainThread]: [31m1 check failed:[0m
+[0m10:13:13.059955 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\dbt_project.yml> not found
+
+[0m10:13:13.062032 [debug] [MainThread]: Command `dbt debug` failed at 10:13:13.062032 after 23.22 seconds
+[0m10:13:13.063034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018943BDF6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000189477DAC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001895A669550>]}
+[0m10:13:13.065058 [debug] [MainThread]: Flushing usage events
+[0m10:13:14.958355 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:20:13.868956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B51DBC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220BACA1160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220BACA11F0>]}
+
+
+============================== 10:20:13.881046 | 35cacde9-9a9f-4cf6-844f-997504f2cfe9 ==============================
+[0m10:20:13.881046 [info ] [MainThread]: Running with dbt=1.12.5
+[0m10:20:13.884187 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m10:20:13.959849 [info ] [MainThread]: dbt version: 1.12.5
+[0m10:20:13.960850 [info ] [MainThread]: python version: 3.12.9
+[0m10:20:13.963077 [info ] [MainThread]: python path: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\.venv\Scripts\python.exe
+[0m10:20:13.964293 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m10:20:16.689897 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m10:20:16.691920 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m10:20:16.692955 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m10:20:19.043833 [info ] [MainThread]: Using profiles dir at C:\Users\AVITA\.dbt
+[0m10:20:19.046007 [info ] [MainThread]: Using profiles.yml file at C:\Users\AVITA\.dbt\profiles.yml
+[0m10:20:19.047110 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\dbt_project.yml
+[0m10:20:19.047110 [info ] [MainThread]: adapter type: databricks
+[0m10:20:19.048268 [info ] [MainThread]: adapter version: 1.10.9
+[0m10:20:19.049727 [info ] [MainThread]: Configuration:
+[0m10:20:19.050806 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:20:19.051861 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:20:19.053995 [info ] [MainThread]: Required dependencies:
+[0m10:20:19.056132 [debug] [MainThread]: Executing "git --help"
+[0m10:20:19.180075 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:20:19.182357 [debug] [MainThread]: STDERR: "b''"
+[0m10:20:19.184370 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:20:19.185423 [info ] [MainThread]: Connection:
+[0m10:20:19.185423 [info ] [MainThread]:   host: dbc-4e85da0d-ae0e.cloud.databricks.com
+[0m10:20:19.186565 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/bd2d44a1b285f33b
+[0m10:20:19.186565 [info ] [MainThread]:   catalog: danny_dbt_dev
+[0m10:20:19.187798 [info ] [MainThread]:   schema: default
+[0m10:20:19.189172 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m10:20:20.341827 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m10:20:20.342827 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m10:20:20.343827 [debug] [MainThread]: Using databricks connection "debug"
+[0m10:20:20.344826 [debug] [MainThread]: On debug: select 1 as id
+[0m10:20:20.344826 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:20:23.147540 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bc8a-7149-120b-887e-56639326ca10) - Created
+[0m10:20:23.828989 [debug] [MainThread]: SQL status: OK in 3.480 seconds
+[0m10:20:23.830993 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1bc8a-7149-120b-887e-56639326ca10, command-id=01f1bc8a-723d-1fd4-b719-1eb69a985e0f) - Closing
+[0m10:20:23.832012 [debug] [MainThread]: On debug: Close
+[0m10:20:23.832012 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bc8a-7149-120b-887e-56639326ca10) - Closing
+[0m10:20:24.201437 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:20:24.201437 [info ] [MainThread]: [31m1 check failed:[0m
+[0m10:20:24.202597 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\dbt_project.yml> not found
+
+[0m10:20:24.204658 [debug] [MainThread]: Command `dbt debug` failed at 10:20:24.204658 after 10.88 seconds
+[0m10:20:24.205855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220BA9A39B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220B51DBC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220CE6F6A20>]}
+[0m10:20:24.206952 [debug] [MainThread]: Flushing usage events
+[0m10:20:25.993554 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:26:03.174785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E20A0E3920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2084C3140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2087428D0>]}
+
+
+============================== 10:26:03.185316 | f8009454-3d49-4ef3-b52e-00cdf498a5d6 ==============================
+[0m10:26:03.185316 [info ] [MainThread]: Running with dbt=1.12.5
+[0m10:26:03.188386 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m10:26:03.280503 [info ] [MainThread]: dbt version: 1.12.5
+[0m10:26:03.281513 [info ] [MainThread]: python version: 3.12.9
+[0m10:26:03.283891 [info ] [MainThread]: python path: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\.venv\Scripts\python.exe
+[0m10:26:03.284927 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m10:26:03.300733 [info ] [MainThread]: Using profiles dir at C:\Users\AVITA\.dbt
+[0m10:26:03.303734 [info ] [MainThread]: Using profiles.yml file at C:\Users\AVITA\.dbt\profiles.yml
+[0m10:26:03.304737 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\dbt_project.yml
+[0m10:26:03.609199 [info ] [MainThread]: Configuration:
+[0m10:26:03.610207 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:26:03.611224 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:26:03.612252 [info ] [MainThread]: Required dependencies:
+[0m10:26:03.613261 [debug] [MainThread]: Executing "git --help"
+[0m10:26:03.710818 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:26:03.713831 [debug] [MainThread]: STDERR: "b''"
+[0m10:26:03.715068 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:26:03.717093 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m10:26:03.717093 [info ] [MainThread]: [31m1 check failed:[0m
+[0m10:26:03.718100 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'dbt_dany_project'
+
+
+[0m10:26:03.720127 [debug] [MainThread]: Command `dbt debug` failed at 10:26:03.720127 after 1.65 seconds
+[0m10:26:03.721137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E208866E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E20A2B3DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E20A303EF0>]}
+[0m10:26:03.722147 [debug] [MainThread]: Flushing usage events
+[0m10:26:05.840384 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:36:24.445076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002406E5E5310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002406DD963F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002406DD94830>]}
+
+
+============================== 10:36:24.471863 | 557375ac-07d9-436d-bc54-aa34e709ce11 ==============================
+[0m10:36:24.471863 [info ] [MainThread]: Running with dbt=1.12.5
+[0m10:36:24.474915 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'invocation_command': 'dbt parse', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m10:36:33.540656 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m10:36:33.541678 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m10:36:33.542691 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m10:36:42.911278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '557375ac-07d9-436d-bc54-aa34e709ce11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002406BB88890>]}
+[0m10:36:43.132153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '557375ac-07d9-436d-bc54-aa34e709ce11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002406FF52120>]}
+[0m10:36:43.135719 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m10:36:45.493812 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m10:36:45.499877 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:36:45.502134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '557375ac-07d9-436d-bc54-aa34e709ce11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240026612E0>]}
+[0m10:36:55.275073 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_dany_project
+[0m10:36:55.290134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '557375ac-07d9-436d-bc54-aa34e709ce11', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002400365A2A0>]}
+[0m10:36:55.303136 [info ] [MainThread]: Performance info: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\perf_info.json
+[0m10:36:55.555572 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m10:36:55.621717 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m10:36:57.369157 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m10:36:57.374316 [debug] [MainThread]: Command `dbt parse` succeeded at 10:36:57.374316 after 33.75 seconds
+[0m10:36:57.375478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002406C606BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024002456A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240025A0200>]}
+[0m10:36:57.377509 [debug] [MainThread]: Flushing usage events
+[0m10:37:00.007031 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:38:02.471507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4C2DEBC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4CA283860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4CA2833E0>]}
+
+
+============================== 10:38:02.490408 | 9dcc7cc0-e415-419f-9d2d-58f4b3481b90 ==============================
+[0m10:38:02.490408 [info ] [MainThread]: Running with dbt=1.12.5
+[0m10:38:02.492416 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m10:38:02.579363 [info ] [MainThread]: dbt version: 1.12.5
+[0m10:38:02.581418 [info ] [MainThread]: python version: 3.12.9
+[0m10:38:02.582421 [info ] [MainThread]: python path: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\.venv\Scripts\python.exe
+[0m10:38:02.584461 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m10:38:05.778069 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m10:38:05.780072 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m10:38:05.782081 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m10:38:08.356873 [info ] [MainThread]: Using profiles dir at C:\Users\AVITA\.dbt
+[0m10:38:08.357874 [info ] [MainThread]: Using profiles.yml file at C:\Users\AVITA\.dbt\profiles.yml
+[0m10:38:08.358926 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\dbt_project.yml
+[0m10:38:08.360941 [info ] [MainThread]: adapter type: databricks
+[0m10:38:08.361961 [info ] [MainThread]: adapter version: 1.10.9
+[0m10:38:08.604531 [info ] [MainThread]: Configuration:
+[0m10:38:08.606622 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:38:08.607624 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:38:08.608635 [info ] [MainThread]: Required dependencies:
+[0m10:38:08.609655 [debug] [MainThread]: Executing "git --help"
+[0m10:38:08.710145 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:38:08.712177 [debug] [MainThread]: STDERR: "b''"
+[0m10:38:08.714306 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:38:08.715385 [info ] [MainThread]: Connection:
+[0m10:38:08.716390 [info ] [MainThread]:   host: dbc-4e85da0d-ae0e.cloud.databricks.com
+[0m10:38:08.717397 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/bd2d44a1b285f33b
+[0m10:38:08.719460 [info ] [MainThread]:   catalog: danny_dbt_dev
+[0m10:38:08.720519 [info ] [MainThread]:   schema: default
+[0m10:38:08.721519 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m10:38:09.895391 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m10:38:09.896393 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m10:38:09.896393 [debug] [MainThread]: Using databricks connection "debug"
+[0m10:38:09.897414 [debug] [MainThread]: On debug: select 1 as id
+[0m10:38:09.897414 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:38:12.727142 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bc8c-eecc-1e7c-b688-f69bf8ba9af1) - Created
+[0m10:38:23.534670 [debug] [MainThread]: SQL status: OK in 13.640 seconds
+[0m10:38:23.536675 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1bc8c-eecc-1e7c-b688-f69bf8ba9af1, command-id=01f1bc8c-efc5-1e44-bf05-46651b0150fc) - Closing
+[0m10:38:23.935121 [debug] [MainThread]: On debug: Close
+[0m10:38:23.936125 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bc8c-eecc-1e7c-b688-f69bf8ba9af1) - Closing
+[0m10:38:24.284874 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:38:24.285882 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:38:24.288901 [debug] [MainThread]: Command `dbt debug` succeeded at 10:38:24.287892 after 22.18 seconds
+[0m10:38:24.289903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4C80B6180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4CA431AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4DC166A80>]}
+[0m10:38:24.290912 [debug] [MainThread]: Flushing usage events
+[0m10:38:26.039135 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:38:45.348921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A94DBCBC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A952E4E060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A952E4FB30>]}
+
+
+============================== 23:38:45.360197 | ca082ab7-2ff6-496b-8f77-8f6d5653d1f4 ==============================
+[0m23:38:45.360197 [info ] [MainThread]: Running with dbt=1.12.5
+[0m23:38:45.361497 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m23:38:45.445406 [info ] [MainThread]: dbt version: 1.12.5
+[0m23:38:45.445406 [info ] [MainThread]: python version: 3.12.9
+[0m23:38:45.446432 [info ] [MainThread]: python path: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\.venv\Scripts\python.exe
+[0m23:38:45.447605 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m23:38:52.562970 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m23:38:52.563989 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m23:38:52.565008 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m23:38:58.348443 [info ] [MainThread]: Using profiles dir at C:\Users\AVITA\.dbt
+[0m23:38:58.349472 [info ] [MainThread]: Using profiles.yml file at C:\Users\AVITA\.dbt\profiles.yml
+[0m23:38:58.350498 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\dbt_project.yml
+[0m23:38:58.351523 [info ] [MainThread]: adapter type: databricks
+[0m23:38:58.352540 [info ] [MainThread]: adapter version: 1.10.9
+[0m23:38:58.539327 [info ] [MainThread]: Configuration:
+[0m23:38:58.540407 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:38:58.541614 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:38:58.542641 [info ] [MainThread]: Required dependencies:
+[0m23:38:58.542641 [debug] [MainThread]: Executing "git --help"
+[0m23:38:58.622412 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:38:58.623545 [debug] [MainThread]: STDERR: "b''"
+[0m23:38:58.623545 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:38:58.624561 [info ] [MainThread]: Connection:
+[0m23:38:58.625578 [info ] [MainThread]:   host: dbc-4e85da0d-ae0e.cloud.databricks.com
+[0m23:38:58.626642 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/bd2d44a1b285f33b
+[0m23:38:58.626642 [info ] [MainThread]:   catalog: danny_dbt_dev
+[0m23:38:58.627712 [info ] [MainThread]:   schema: default
+[0m23:38:58.629752 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m23:38:59.757171 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m23:38:59.758176 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m23:38:59.758176 [debug] [MainThread]: Using databricks connection "debug"
+[0m23:38:59.758176 [debug] [MainThread]: On debug: select 1 as id
+[0m23:38:59.759183 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:39:02.803475 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bcfa-02e4-1e1c-9900-8e6cb41d17b5) - Created
+[0m23:39:12.414321 [debug] [MainThread]: SQL status: OK in 12.660 seconds
+[0m23:39:12.415433 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1bcfa-02e4-1e1c-9900-8e6cb41d17b5, command-id=01f1bcfa-03f5-1618-b781-794deca8b8df) - Closing
+[0m23:39:12.797568 [debug] [MainThread]: On debug: Close
+[0m23:39:12.798568 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bcfa-02e4-1e1c-9900-8e6cb41d17b5) - Closing
+[0m23:39:13.111453 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:39:13.111453 [info ] [MainThread]: [32mAll checks passed![0m
+[0m23:39:13.113678 [debug] [MainThread]: Command `dbt debug` succeeded at 23:39:13.113678 after 28.17 seconds
+[0m23:39:13.114785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9535E28A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A967192240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A9534CB1D0>]}
+[0m23:39:13.115802 [debug] [MainThread]: Flushing usage events
+[0m23:39:14.791321 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:01:27.308687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259D245C140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259D07231A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259D06591C0>]}
+
+
+============================== 00:01:27.325119 | 4253c3a4-830a-4d97-9fa9-4b00a94f6a59 ==============================
+[0m00:01:27.325119 [info ] [MainThread]: Running with dbt=1.12.5
+[0m00:01:27.328136 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt ', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'c:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m00:01:27.897192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4253c3a4-830a-4d97-9fa9-4b00a94f6a59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259D25DC5F0>]}
+[0m00:01:28.406609 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m00:01:28.410640 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m00:01:28.415670 [debug] [MainThread]: Command `cli deps` succeeded at 00:01:28.415670 after 1.75 seconds
+[0m00:01:28.416672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259D07231A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259CFE38380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259D02D52B0>]}
+[0m00:01:28.418671 [debug] [MainThread]: Flushing usage events
+[0m00:01:30.577960 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:01:40.066621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219B256F950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219B4FF9D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219B4FFA1B0>]}
+
+
+============================== 00:01:40.085336 | 75a220be-37ce-4c8a-bf42-09e7fc29f956 ==============================
+[0m00:01:40.085336 [info ] [MainThread]: Running with dbt=1.12.5
+[0m00:01:40.087339 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'invocation_command': 'dbt ', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'c:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m00:01:40.180930 [info ] [MainThread]: dbt version: 1.12.5
+[0m00:01:40.183936 [info ] [MainThread]: python version: 3.12.9
+[0m00:01:40.184930 [info ] [MainThread]: python path: c:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\.venv\Scripts\python.exe
+[0m00:01:40.186931 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m00:01:44.458383 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m00:01:44.462454 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m00:01:44.464818 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m00:01:48.831557 [info ] [MainThread]: Using profiles dir at C:\Users\AVITA\.dbt
+[0m00:01:48.832794 [info ] [MainThread]: Using profiles.yml file at C:\Users\AVITA\.dbt\profiles.yml
+[0m00:01:48.833805 [info ] [MainThread]: Using dbt_project.yml file at c:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\dbt_project.yml
+[0m00:01:48.837101 [info ] [MainThread]: adapter type: databricks
+[0m00:01:48.840105 [info ] [MainThread]: adapter version: 1.10.9
+[0m00:01:49.300563 [info ] [MainThread]: Configuration:
+[0m00:01:49.301564 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:01:49.303564 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:01:49.305564 [info ] [MainThread]: Required dependencies:
+[0m00:01:49.309565 [debug] [MainThread]: Executing "git --help"
+[0m00:01:49.510721 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:01:49.513721 [debug] [MainThread]: STDERR: "b''"
+[0m00:01:49.517720 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:01:49.519955 [info ] [MainThread]: Connection:
+[0m00:01:49.522304 [info ] [MainThread]:   host: dbc-4e85da0d-ae0e.cloud.databricks.com
+[0m00:01:49.523306 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/bd2d44a1b285f33b
+[0m00:01:49.525754 [info ] [MainThread]:   catalog: danny_dbt_dev
+[0m00:01:49.527755 [info ] [MainThread]:   schema: default
+[0m00:01:49.529756 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m00:01:52.040009 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m00:01:52.041009 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m00:01:52.042007 [debug] [MainThread]: Using databricks connection "debug"
+[0m00:01:52.042007 [debug] [MainThread]: On debug: select 1 as id
+[0m00:01:52.043159 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:01:55.187762 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bcfd-34f3-1304-95e1-07ccbace08fa) - Created
+[0m00:02:03.539676 [debug] [MainThread]: SQL status: OK in 11.500 seconds
+[0m00:02:03.542893 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1bcfd-34f3-1304-95e1-07ccbace08fa, command-id=01f1bcfd-35f8-160c-ab5f-dd9e0da8b31f) - Closing
+[0m00:02:04.011966 [debug] [MainThread]: On debug: Close
+[0m00:02:04.014248 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bcfd-34f3-1304-95e1-07ccbace08fa) - Closing
+[0m00:02:04.377442 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:02:04.379470 [info ] [MainThread]: [32mAll checks passed![0m
+[0m00:02:04.384920 [debug] [MainThread]: Command `cli debug` succeeded at 00:02:04.383920 after 24.97 seconds
+[0m00:02:04.387920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219B256F950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219C7E71F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219B43F1760>]}
+[0m00:02:04.389921 [debug] [MainThread]: Flushing usage events
+[0m00:02:06.307706 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:08:19.672039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B829903290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B82D78C380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B82D5B65D0>]}
+
+
+============================== 00:08:19.681721 | c7727976-6f49-4718-bf29-12941d7237fa ==============================
+[0m00:08:19.681721 [info ] [MainThread]: Running with dbt=1.12.5
+[0m00:08:19.684170 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m00:08:19.737008 [info ] [MainThread]: dbt version: 1.12.5
+[0m00:08:19.738057 [info ] [MainThread]: python version: 3.12.9
+[0m00:08:19.739210 [info ] [MainThread]: python path: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\.venv\Scripts\python.exe
+[0m00:08:19.739210 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m00:08:22.030828 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m00:08:22.031831 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m00:08:22.032834 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m00:08:23.532619 [info ] [MainThread]: Using profiles dir at C:\Users\AVITA\.dbt
+[0m00:08:23.534621 [info ] [MainThread]: Using profiles.yml file at C:\Users\AVITA\.dbt\profiles.yml
+[0m00:08:23.535620 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\dbt_project.yml
+[0m00:08:23.537620 [info ] [MainThread]: adapter type: databricks
+[0m00:08:23.538620 [info ] [MainThread]: adapter version: 1.10.9
+[0m00:08:23.867254 [info ] [MainThread]: Configuration:
+[0m00:08:23.868262 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:08:23.869498 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:08:23.870751 [info ] [MainThread]: Required dependencies:
+[0m00:08:23.871874 [debug] [MainThread]: Executing "git --help"
+[0m00:08:23.968324 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:08:23.968324 [debug] [MainThread]: STDERR: "b''"
+[0m00:08:23.969832 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:08:23.969832 [info ] [MainThread]: Connection:
+[0m00:08:23.970844 [info ] [MainThread]:   host: dbc-4e85da0d-ae0e.cloud.databricks.com
+[0m00:08:23.971854 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/bd2d44a1b285f33b
+[0m00:08:23.972862 [info ] [MainThread]:   catalog: danny_dbt_dev
+[0m00:08:23.972862 [info ] [MainThread]:   schema: default
+[0m00:08:23.973872 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m00:08:24.889579 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m00:08:24.890583 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m00:08:24.892582 [debug] [MainThread]: Using databricks connection "debug"
+[0m00:08:24.893581 [debug] [MainThread]: On debug: select 1 as id
+[0m00:08:24.893581 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:08:27.576192 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bcfe-1ee7-1006-bfe8-c7ffa9d1cda5) - Created
+[0m00:08:28.316872 [debug] [MainThread]: SQL status: OK in 3.420 seconds
+[0m00:08:28.318872 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1bcfe-1ee7-1006-bfe8-c7ffa9d1cda5, command-id=01f1bcfe-1fd9-1761-a1c7-dacaf4d08da0) - Closing
+[0m00:08:28.319872 [debug] [MainThread]: On debug: Close
+[0m00:08:28.320874 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1bcfe-1ee7-1006-bfe8-c7ffa9d1cda5) - Closing
+[0m00:08:28.677652 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:08:28.678653 [info ] [MainThread]: [32mAll checks passed![0m
+[0m00:08:28.682652 [debug] [MainThread]: Command `dbt debug` succeeded at 00:08:28.681653 after 9.48 seconds
+[0m00:08:28.682652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B82D45E930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B82D6D6D20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B8416D0440>]}
+[0m00:08:28.683653 [debug] [MainThread]: Flushing usage events
+[0m00:08:30.301562 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:19:11.640773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B318F0A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B34EE6D80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B35294800>]}
+
+
+============================== 01:19:11.669939 | 3e65413c-51c8-44ef-9327-51c00bc9b437 ==============================
+[0m01:19:11.669939 [info ] [MainThread]: Running with dbt=1.12.5
+[0m01:19:11.675938 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt parse', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m01:19:17.736867 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m01:19:17.739059 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m01:19:17.741366 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m01:19:23.874015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3e65413c-51c8-44ef-9327-51c00bc9b437', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B47E6A030>]}
+[0m01:19:24.233624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3e65413c-51c8-44ef-9327-51c00bc9b437', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B49028CB0>]}
+[0m01:19:24.238624 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m01:19:26.335532 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m01:19:27.208652 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:19:27.210953 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m01:19:27.212165 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:19:27.246671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3e65413c-51c8-44ef-9327-51c00bc9b437', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B4A17EFF0>]}
+[0m01:19:27.271866 [info ] [MainThread]: Performance info: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\perf_info.json
+[0m01:19:28.151949 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m01:19:28.275268 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m01:19:28.563507 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m01:19:28.571506 [debug] [MainThread]: Command `dbt parse` succeeded at 01:19:28.570506 after 18.39 seconds
+[0m01:19:28.573552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B318F0A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B4A521040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B31C0E780>]}
+[0m01:19:28.575554 [debug] [MainThread]: Flushing usage events
+[0m01:19:31.300227 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:19:43.352693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDD0107530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDD29C8B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDD29CA5A0>]}
+
+
+============================== 01:19:43.366179 | 20f4a9fc-9179-47ba-b72e-39d99b425255 ==============================
+[0m01:19:43.366179 [info ] [MainThread]: Running with dbt=1.12.5
+[0m01:19:43.367528 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt ls --resource-type source', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m01:19:47.326137 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m01:19:47.327141 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m01:19:47.328201 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m01:19:50.743023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '20f4a9fc-9179-47ba-b72e-39d99b425255', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDE6BBC8F0>]}
+[0m01:19:50.992726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '20f4a9fc-9179-47ba-b72e-39d99b425255', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDE5F975F0>]}
+[0m01:19:50.994727 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m01:19:52.572045 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m01:19:53.159626 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:19:53.160629 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m01:19:53.160629 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:19:53.202232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '20f4a9fc-9179-47ba-b72e-39d99b425255', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDE7C82BD0>]}
+[0m01:19:53.921250 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m01:19:53.932684 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m01:19:54.075793 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m01:19:54.747264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '20f4a9fc-9179-47ba-b72e-39d99b425255', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDE7BDE600>]}
+[0m01:19:54.751264 [info ] [MainThread]: Found 1 model, 6 sources, 726 macros
+[0m01:19:54.753267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '20f4a9fc-9179-47ba-b72e-39d99b425255', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDE6778CE0>]}
+[0m01:19:54.758266 [info ] [MainThread]: source:dbt_dany_project.source.dim_customer
+[0m01:19:54.760263 [info ] [MainThread]: source:dbt_dany_project.source.dim_date
+[0m01:19:54.762264 [info ] [MainThread]: source:dbt_dany_project.source.dim_product
+[0m01:19:54.763264 [info ] [MainThread]: source:dbt_dany_project.source.dim_store
+[0m01:19:54.765264 [info ] [MainThread]: source:dbt_dany_project.source.fact_returns
+[0m01:19:54.767267 [info ] [MainThread]: source:dbt_dany_project.source.fact_sales
+[0m01:19:54.772265 [debug] [MainThread]: Command `dbt ls` succeeded at 01:19:54.771268 after 11.91 seconds
+[0m01:19:54.774267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDD0908F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDD0833DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDE7F957C0>]}
+[0m01:19:54.776266 [debug] [MainThread]: Flushing usage events
+[0m01:19:57.774763 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:20:13.224103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B25F731D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B28A8B9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B28A899A0>]}
+
+
+============================== 01:20:13.250235 | d7d39d26-1b87-474d-9e96-3e582ddf843e ==============================
+[0m01:20:13.250235 [info ] [MainThread]: Running with dbt=1.12.5
+[0m01:20:13.253664 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt compile --select bronze_sales', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m01:20:17.848158 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m01:20:17.849158 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m01:20:17.852157 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m01:20:20.922429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd7d39d26-1b87-474d-9e96-3e582ddf843e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B3CA23FE0>]}
+[0m01:20:21.303815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd7d39d26-1b87-474d-9e96-3e582ddf843e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B28B01460>]}
+[0m01:20:21.309394 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m01:20:22.991841 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m01:20:23.623187 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:20:23.624189 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m01:20:23.625185 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:20:23.661482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd7d39d26-1b87-474d-9e96-3e582ddf843e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B3C66EFF0>]}
+[0m01:20:24.394102 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m01:20:24.410171 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m01:20:24.588161 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m01:20:24.729678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd7d39d26-1b87-474d-9e96-3e582ddf843e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B3DA388F0>]}
+[0m01:20:24.731677 [info ] [MainThread]: Found 1 model, 6 sources, 726 macros
+[0m01:20:24.734677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd7d39d26-1b87-474d-9e96-3e582ddf843e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B3DA5C200>]}
+[0m01:20:24.743680 [info ] [MainThread]: 
+[0m01:20:24.746676 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:20:24.747679 [info ] [MainThread]: 
+[0m01:20:24.750676 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m01:20:24.752852 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m01:20:24.756849 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev_default) - Creating connection
+[0m01:20:24.758849 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev_default'
+[0m01:20:24.827013 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev_default"
+[0m01:20:24.829011 [debug] [ThreadPool]: On list_danny_dbt_dev_default: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "list_danny_dbt_dev_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'danny_dbt_dev' 
+  AND table_schema = 'default'
+
+  
+[0m01:20:24.831012 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:20:28.235506 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1bd08-2e41-19dd-b12d-4d99a3d02c87) - Created
+[0m01:20:29.796543 [debug] [ThreadPool]: SQL status: OK in 4.970 seconds
+[0m01:20:29.863743 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1bd08-2e41-19dd-b12d-4d99a3d02c87, command-id=01f1bd08-2f31-12d3-b83e-d8c3751b29eb) - Closing
+[0m01:20:29.864746 [debug] [ThreadPool]: On list_danny_dbt_dev_default: Close
+[0m01:20:29.865746 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1bd08-2e41-19dd-b12d-4d99a3d02c87) - Closing
+[0m01:20:30.218700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd7d39d26-1b87-474d-9e96-3e582ddf843e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B28440CB0>]}
+[0m01:20:30.301366 [debug] [Thread-2 (]: Began running node model.dbt_dany_project.bronze_sales
+[0m01:20:30.303760 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_sales) - Creating connection
+[0m01:20:30.304762 [debug] [Thread-2 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_sales'
+[0m01:20:30.305763 [debug] [Thread-2 (]: Began compiling node model.dbt_dany_project.bronze_sales
+[0m01:20:30.318446 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_sales"
+[0m01:20:30.331363 [debug] [Thread-2 (]: Began executing node model.dbt_dany_project.bronze_sales
+[0m01:20:30.335951 [debug] [Thread-2 (]: Finished running node model.dbt_dany_project.bronze_sales
+[0m01:20:30.340103 [debug] [MainThread]: Command end result
+[0m01:20:30.584551 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m01:20:30.648559 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m01:20:30.687559 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m01:20:30.759036 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\run_results.json
+[0m01:20:30.763077 [info ] [MainThread]: Compiled node 'bronze_sales' is:
+select * from `danny_dbt_dev`.`source`.`fact_sales`
+[0m01:20:30.777079 [debug] [MainThread]: Command `dbt compile` succeeded at 01:20:30.776079 after 18.04 seconds
+[0m01:20:30.781276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B3DB45610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B3E039CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015B3C5C8500>]}
+[0m01:20:30.787286 [debug] [MainThread]: Flushing usage events
+[0m01:20:33.551547 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:28:55.139789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993EA37F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993CDD7350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993C6A3170>]}
+
+
+============================== 09:28:55.163339 | dc7fcf84-7f4c-4b04-8750-850384c4d7b4 ==============================
+[0m09:28:55.163339 [info ] [MainThread]: Running with dbt=1.12.5
+[0m09:28:55.166983 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m09:28:59.561267 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m09:28:59.562372 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m09:28:59.562372 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m09:29:04.826471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199531BCB00>]}
+[0m09:29:05.139408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019951B6E360>]}
+[0m09:29:05.142410 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m09:29:08.352890 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m09:29:09.252704 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:29:09.254705 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m09:29:09.256705 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:29:09.331308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199531712E0>]}
+[0m09:29:10.114818 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m09:29:10.268822 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m09:29:10.695857 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m09:29:11.001881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001995307AE70>]}
+[0m09:29:11.004880 [info ] [MainThread]: Found 6 models, 6 sources, 726 macros
+[0m09:29:11.011881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199531E17F0>]}
+[0m09:29:11.025883 [info ] [MainThread]: 
+[0m09:29:11.035884 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:29:11.048882 [info ] [MainThread]: 
+[0m09:29:11.057882 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m09:29:11.060883 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m09:29:11.099888 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev) - Creating connection
+[0m09:29:11.103887 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev'
+[0m09:29:11.105886 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev"
+[0m09:29:11.106885 [debug] [ThreadPool]: On list_danny_dbt_dev: GetSchemas(database=danny_dbt_dev, schema=None)
+[0m09:29:11.108885 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:29:14.467124 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1be15-a0f9-1747-a776-adb12353a59f) - Created
+[0m09:30:16.758490 [debug] [ThreadPool]: SQL status: OK in 65.650 seconds
+[0m09:30:16.760530 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1be15-a0f9-1747-a776-adb12353a59f, command-id=01f1be15-c5f0-172e-ab48-e9be32bfbb0e) - Closing
+[0m09:30:16.760530 [debug] [ThreadPool]: On list_danny_dbt_dev: Close
+[0m09:30:16.761633 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1be15-a0f9-1747-a776-adb12353a59f) - Closing
+[0m09:30:17.123490 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev_default) - Creating connection
+[0m09:30:17.123490 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev_default'
+[0m09:30:17.143557 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev_default"
+[0m09:30:17.144558 [debug] [ThreadPool]: On list_danny_dbt_dev_default: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "list_danny_dbt_dev_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'danny_dbt_dev' 
+  AND table_schema = 'default'
+
+  
+[0m09:30:17.144558 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:30:18.551130 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1be15-c7f5-1bd5-b23a-ee2c1749a513) - Created
+[0m09:30:21.080497 [debug] [ThreadPool]: SQL status: OK in 3.940 seconds
+[0m09:30:21.128115 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1be15-c7f5-1bd5-b23a-ee2c1749a513, command-id=01f1be15-c82c-1f05-89f0-d2a06218c48f) - Closing
+[0m09:30:21.129135 [debug] [ThreadPool]: On list_danny_dbt_dev_default: Close
+[0m09:30:21.130156 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1be15-c7f5-1bd5-b23a-ee2c1749a513) - Closing
+[0m09:30:21.490306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993EAD2F90>]}
+[0m09:30:21.501230 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_customer
+[0m09:30:21.502350 [info ] [Thread-3 (]: 1 of 6 START sql table model default.bronze_customer ........................... [RUN]
+[0m09:30:21.503807 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_customer) - Creating connection
+[0m09:30:21.503807 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_customer'
+[0m09:30:21.504824 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_customer
+[0m09:30:21.514918 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_customer"
+[0m09:30:21.517219 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_customer
+[0m09:30:21.552946 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m09:30:21.553955 [warn ] [Thread-3 (]: [[33mWARNING[0m]: Use revamped materializations based on separating create and insert.  This allows more performant column comments, as well as new column features.
+You may opt into the new behavior sooner by setting `flags.use_materialization_v2` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m09:30:21.555980 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993F6F1E20>]}
+[0m09:30:21.644377 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_customer"
+[0m09:30:21.651854 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_customer"
+[0m09:30:21.652913 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_customer: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_customer"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_customer`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`dim_customer`
+  
+[0m09:30:21.654138 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:30:23.348750 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be15-caba-14ca-9ae6-387de44cf507) - Created
+[0m09:30:37.952678 [debug] [Thread-3 (]: SQL status: OK in 16.300 seconds
+[0m09:30:37.954679 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be15-caba-14ca-9ae6-387de44cf507, command-id=01f1be15-cb08-1d33-bce7-00e2905f2166) - Closing
+[0m09:30:38.358906 [debug] [Thread-3 (]: Applying tags to relation None
+[0m09:30:38.391910 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_customer: Close
+[0m09:30:38.392909 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be15-caba-14ca-9ae6-387de44cf507) - Closing
+[0m09:30:38.913408 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993C7AB530>]}
+[0m09:30:38.918409 [info ] [Thread-3 (]: 1 of 6 OK created sql table model default.bronze_customer ...................... [[32mOK[0m in 17.33s]
+[0m09:30:38.920693 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_customer
+[0m09:30:38.922700 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_date
+[0m09:30:38.924848 [info ] [Thread-3 (]: 2 of 6 START sql table model default.bronze_date ............................... [RUN]
+[0m09:30:38.928113 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_date) - Creating connection
+[0m09:30:38.929113 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_date'
+[0m09:30:38.931112 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_date
+[0m09:30:38.937119 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_date"
+[0m09:30:38.942122 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_date
+[0m09:30:38.965861 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m09:30:38.979862 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_date"
+[0m09:30:38.988862 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_date"
+[0m09:30:38.994865 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_date: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_date"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_date`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`dim_date`
+  
+[0m09:30:38.996862 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:30:40.726839 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be15-d51d-1e70-ae70-cdef66de739f) - Created
+[0m09:30:44.886554 [debug] [Thread-3 (]: SQL status: OK in 5.890 seconds
+[0m09:30:44.891557 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be15-d51d-1e70-ae70-cdef66de739f, command-id=01f1be15-d565-1449-8c53-98ab16daf361) - Closing
+[0m09:30:44.895557 [debug] [Thread-3 (]: Applying tags to relation None
+[0m09:30:44.906999 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_date: Close
+[0m09:30:44.909113 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be15-d51d-1e70-ae70-cdef66de739f) - Closing
+[0m09:30:45.252507 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199545F9DC0>]}
+[0m09:30:45.254883 [info ] [Thread-3 (]: 2 of 6 OK created sql table model default.bronze_date .......................... [[32mOK[0m in 6.32s]
+[0m09:30:45.256971 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_date
+[0m09:30:45.259373 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_product
+[0m09:30:45.261375 [info ] [Thread-3 (]: 3 of 6 START sql table model default.bronze_product ............................ [RUN]
+[0m09:30:45.264015 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_product) - Creating connection
+[0m09:30:45.266019 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_product'
+[0m09:30:45.268200 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_product
+[0m09:30:45.280416 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_product"
+[0m09:30:45.285479 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_product
+[0m09:30:45.292482 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m09:30:45.301055 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_product"
+[0m09:30:45.305057 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_product"
+[0m09:30:45.307057 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_product: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_product"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_product`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`dim_product`
+  
+[0m09:30:45.309057 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:30:47.324870 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be15-d908-15bd-88f3-e640f3f9d121) - Created
+[0m09:30:51.118141 [debug] [Thread-3 (]: SQL status: OK in 5.810 seconds
+[0m09:30:51.122143 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be15-d908-15bd-88f3-e640f3f9d121, command-id=01f1be15-d954-11ce-95d6-2bb417d7de52) - Closing
+[0m09:30:51.126143 [debug] [Thread-3 (]: Applying tags to relation None
+[0m09:30:51.133145 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_product: Close
+[0m09:30:51.135145 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be15-d908-15bd-88f3-e640f3f9d121) - Closing
+[0m09:30:51.501478 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019953280080>]}
+[0m09:30:51.504479 [info ] [Thread-3 (]: 3 of 6 OK created sql table model default.bronze_product ....................... [[32mOK[0m in 6.24s]
+[0m09:30:51.511967 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_product
+[0m09:30:51.513969 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_returns
+[0m09:30:51.528968 [info ] [Thread-3 (]: 4 of 6 START sql table model default.bronze_returns ............................ [RUN]
+[0m09:30:51.613976 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_returns) - Creating connection
+[0m09:30:51.615975 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_returns'
+[0m09:30:51.617975 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_returns
+[0m09:30:51.627979 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_returns"
+[0m09:30:51.638979 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_returns
+[0m09:30:51.657978 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m09:30:51.679978 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_returns"
+[0m09:30:51.684980 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_returns"
+[0m09:30:51.687978 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_returns: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_returns"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_returns`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`fact_returns`
+  
+[0m09:30:51.690983 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:30:54.113161 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be15-dd0f-1b18-9742-9bd38612db53) - Created
+[0m09:30:58.125292 [debug] [Thread-3 (]: SQL status: OK in 6.430 seconds
+[0m09:30:58.128291 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be15-dd0f-1b18-9742-9bd38612db53, command-id=01f1be15-dd5e-1c86-a6cc-4cce99732301) - Closing
+[0m09:30:58.130605 [debug] [Thread-3 (]: Applying tags to relation None
+[0m09:30:58.139476 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_returns: Close
+[0m09:30:58.141476 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be15-dd0f-1b18-9742-9bd38612db53) - Closing
+[0m09:30:58.488902 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993F6F5550>]}
+[0m09:30:58.491234 [info ] [Thread-3 (]: 4 of 6 OK created sql table model default.bronze_returns ....................... [[32mOK[0m in 6.88s]
+[0m09:30:58.493269 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_returns
+[0m09:30:58.494284 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_sales
+[0m09:30:58.497333 [info ] [Thread-3 (]: 5 of 6 START sql table model default.bronze_sales .............................. [RUN]
+[0m09:30:58.500383 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_sales) - Creating connection
+[0m09:30:58.503468 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_sales'
+[0m09:30:58.504539 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_sales
+[0m09:30:58.520814 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_sales"
+[0m09:30:58.528375 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_sales
+[0m09:30:58.531410 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m09:30:58.540824 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_sales"
+[0m09:30:58.546034 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_sales"
+[0m09:30:58.549065 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_sales: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_sales"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_sales`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`fact_sales`
+  
+[0m09:30:58.550114 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:31:00.278926 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be15-e0bd-12ba-8e90-c12ca2805fa4) - Created
+[0m09:31:04.158931 [debug] [Thread-3 (]: SQL status: OK in 5.610 seconds
+[0m09:31:04.161954 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be15-e0bd-12ba-8e90-c12ca2805fa4, command-id=01f1be15-e10b-196c-970b-19b26878bf18) - Closing
+[0m09:31:04.165952 [debug] [Thread-3 (]: Applying tags to relation None
+[0m09:31:04.172184 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_sales: Close
+[0m09:31:04.173192 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be15-e0bd-12ba-8e90-c12ca2805fa4) - Closing
+[0m09:31:04.511215 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019954272990>]}
+[0m09:31:04.512220 [info ] [Thread-3 (]: 5 of 6 OK created sql table model default.bronze_sales ......................... [[32mOK[0m in 6.01s]
+[0m09:31:04.514303 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_sales
+[0m09:31:04.515311 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_store
+[0m09:31:04.516316 [info ] [Thread-3 (]: 6 of 6 START sql table model default.bronze_store .............................. [RUN]
+[0m09:31:04.518757 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_store) - Creating connection
+[0m09:31:04.519791 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_store'
+[0m09:31:04.520796 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_store
+[0m09:31:04.524826 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_store"
+[0m09:31:04.530037 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_store
+[0m09:31:04.540559 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m09:31:04.552882 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_store"
+[0m09:31:04.558198 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_store"
+[0m09:31:04.560599 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_store: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_store"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_store`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`dim_store`
+  
+[0m09:31:04.563662 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:31:06.237589 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be15-e457-1d27-9c28-66bb729742cc) - Created
+[0m09:31:10.061902 [debug] [Thread-3 (]: SQL status: OK in 5.500 seconds
+[0m09:31:10.066913 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be15-e457-1d27-9c28-66bb729742cc, command-id=01f1be15-e49a-173a-9d1b-eb1ddc7e061c) - Closing
+[0m09:31:10.071196 [debug] [Thread-3 (]: Applying tags to relation None
+[0m09:31:10.076668 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_store: Close
+[0m09:31:10.078701 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be15-e457-1d27-9c28-66bb729742cc) - Closing
+[0m09:31:10.473094 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc7fcf84-7f4c-4b04-8750-850384c4d7b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993F6F73B0>]}
+[0m09:31:10.476133 [info ] [Thread-3 (]: 6 of 6 OK created sql table model default.bronze_store ......................... [[32mOK[0m in 5.96s]
+[0m09:31:10.481133 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_store
+[0m09:31:10.485134 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m09:31:10.488134 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m09:31:10.490133 [info ] [MainThread]: 
+[0m09:31:10.491140 [info ] [MainThread]: Finished running 6 table models in 0 hours 1 minutes and 59.44 seconds (119.44s).
+[0m09:31:10.498630 [debug] [MainThread]: Command end result
+[0m09:31:11.107956 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m09:31:11.167959 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m09:31:11.370973 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m09:31:11.457983 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\run_results.json
+[0m09:31:11.466981 [info ] [MainThread]: 
+[0m09:31:11.496983 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:31:11.552987 [info ] [MainThread]: 
+[0m09:31:11.573989 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=6
+[0m09:31:11.614991 [debug] [MainThread]: Command `dbt run` succeeded at 09:31:11.611992 after 137.04 seconds
+[0m09:31:11.632993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993EF37890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001995286A000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001993C8B2210>]}
+[0m09:31:11.634995 [debug] [MainThread]: Flushing usage events
+[0m09:31:14.965355 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:52:21.566999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049DBE1010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049DBE3FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049DBE10A0>]}
+
+
+============================== 09:52:21.580996 | 9e68176a-6ab7-4817-bad1-d0a81f05840a ==============================
+[0m09:52:21.580996 [info ] [MainThread]: Running with dbt=1.12.5
+[0m09:52:21.583997 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m09:52:25.826765 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m09:52:25.827768 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m09:52:25.828770 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m09:52:29.206999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049F7A4350>]}
+[0m09:52:29.440487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049DA26BD0>]}
+[0m09:52:29.443005 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m09:52:30.979911 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m09:52:31.704274 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:52:31.705289 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m09:52:31.706294 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:52:31.732141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B2B63CB0>]}
+[0m09:52:32.155625 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m09:52:32.169169 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m09:52:32.304840 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m09:52:32.368020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B2B60470>]}
+[0m09:52:32.369457 [info ] [MainThread]: Found 6 models, 6 sources, 726 macros
+[0m09:52:32.370456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B2C21CD0>]}
+[0m09:52:32.382225 [info ] [MainThread]: 
+[0m09:52:32.384662 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:52:32.386690 [info ] [MainThread]: 
+[0m09:52:32.390163 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m09:52:32.391167 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m09:52:32.424628 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev) - Creating connection
+[0m09:52:32.426663 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev'
+[0m09:52:32.428676 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev"
+[0m09:52:32.430675 [debug] [ThreadPool]: On list_danny_dbt_dev: GetSchemas(database=danny_dbt_dev, schema=None)
+[0m09:52:32.432675 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:52:35.689663 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1be18-e422-1104-a85d-d17f8aed260f) - Created
+[0m09:53:37.491603 [debug] [ThreadPool]: SQL status: OK in 65.060 seconds
+[0m09:53:37.493604 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1be18-e422-1104-a85d-d17f8aed260f, command-id=01f1be19-0927-1798-b878-8b02e7d9476e) - Closing
+[0m09:53:37.494605 [debug] [ThreadPool]: On list_danny_dbt_dev: Close
+[0m09:53:37.495606 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1be18-e422-1104-a85d-d17f8aed260f) - Closing
+[0m09:53:37.878964 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev_default) - Creating connection
+[0m09:53:37.879964 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev_default'
+[0m09:53:37.900065 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev_default"
+[0m09:53:37.901063 [debug] [ThreadPool]: On list_danny_dbt_dev_default: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "list_danny_dbt_dev_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'danny_dbt_dev' 
+  AND table_schema = 'default'
+
+  
+[0m09:53:37.901063 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:53:39.280097 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1be19-0ada-1324-b7c2-80b2c78605d1) - Created
+[0m09:53:41.943698 [debug] [ThreadPool]: SQL status: OK in 4.040 seconds
+[0m09:53:41.994785 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1be19-0ada-1324-b7c2-80b2c78605d1, command-id=01f1be19-0b14-11e4-9ae9-9eb8fcf6347b) - Closing
+[0m09:53:41.995785 [debug] [ThreadPool]: On list_danny_dbt_dev_default: Close
+[0m09:53:41.996785 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1be19-0ada-1324-b7c2-80b2c78605d1) - Closing
+[0m09:53:42.345638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049D3CA8D0>]}
+[0m09:53:42.360248 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_customer
+[0m09:53:42.362505 [info ] [Thread-3 (]: 1 of 6 START sql table model default.bronze_customer ........................... [RUN]
+[0m09:53:42.363509 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_customer) - Creating connection
+[0m09:53:42.364506 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_customer'
+[0m09:53:42.365505 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_customer
+[0m09:53:42.374505 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_customer"
+[0m09:53:42.377701 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_customer
+[0m09:53:42.406891 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m09:53:42.407892 [warn ] [Thread-3 (]: [[33mWARNING[0m]: Use revamped materializations based on separating create and insert.  This allows more performant column comments, as well as new column features.
+You may opt into the new behavior sooner by setting `flags.use_materialization_v2` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m09:53:42.408892 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B32BBC20>]}
+[0m09:53:42.557180 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_customer"
+[0m09:53:42.559211 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_customer"
+[0m09:53:42.560501 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_customer: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_customer"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_customer`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`dim_customer`
+  
+[0m09:53:42.562512 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:53:44.138357 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be19-0db3-1622-9e1e-94f22372a47e) - Created
+[0m09:53:57.784765 [debug] [Thread-3 (]: SQL status: OK in 15.220 seconds
+[0m09:53:57.786770 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be19-0db3-1622-9e1e-94f22372a47e, command-id=01f1be19-0df9-1f39-87aa-eeaaac01bc7b) - Closing
+[0m09:53:58.160209 [debug] [Thread-3 (]: Applying tags to relation None
+[0m09:53:58.188212 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_customer: Close
+[0m09:53:58.189212 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be19-0db3-1622-9e1e-94f22372a47e) - Closing
+[0m09:53:58.542673 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049D4347A0>]}
+[0m09:53:58.543674 [info ] [Thread-3 (]: 1 of 6 OK created sql table model default.bronze_customer ...................... [[32mOK[0m in 16.16s]
+[0m09:53:58.544673 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_customer
+[0m09:53:58.545939 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_date
+[0m09:53:58.547003 [info ] [Thread-3 (]: 2 of 6 START sql view model default.bronze_date ................................ [RUN]
+[0m09:53:58.548222 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_date) - Creating connection
+[0m09:53:58.549221 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_date'
+[0m09:53:58.549221 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_date
+[0m09:53:58.552222 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_date"
+[0m09:53:58.554223 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_date
+[0m09:53:58.581258 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m09:53:58.597720 [debug] [Thread-3 (]: Dropping relation `danny_dbt_dev`.`default`.`bronze_date` because it is of type table
+[0m09:53:58.611432 [debug] [Thread-3 (]: Applying DROP to: `danny_dbt_dev`.`default`.`bronze_date`
+[0m09:53:58.625433 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_date"
+[0m09:53:58.627434 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_date: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_date"} */
+drop table if exists `danny_dbt_dev`.`default`.`bronze_date`
+[0m09:53:58.628434 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:54:00.243795 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be19-1746-18be-afeb-b7490a9eea9f) - Created
+[0m09:54:01.489259 [debug] [Thread-3 (]: SQL status: OK in 2.860 seconds
+[0m09:54:01.491260 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be19-1746-18be-afeb-b7490a9eea9f, command-id=01f1be19-1793-1cce-80e4-75d5194ba305) - Closing
+[0m09:54:01.520263 [debug] [Thread-3 (]: Creating view `danny_dbt_dev`.`default`.`bronze_date`
+[0m09:54:01.523262 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_date"
+[0m09:54:01.527263 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_date"
+[0m09:54:01.529262 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_date: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_date"} */
+
+  
+  
+  create or replace view `danny_dbt_dev`.`default`.`bronze_date`
+  
+  as (
+    select * from `danny_dbt_dev`.`source`.`dim_date`
+  )
+
+[0m09:54:02.673655 [debug] [Thread-3 (]: SQL status: OK in 1.140 seconds
+[0m09:54:02.679992 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be19-1746-18be-afeb-b7490a9eea9f, command-id=01f1be19-1858-1250-b352-13d6985ef765) - Closing
+[0m09:54:02.685283 [debug] [Thread-3 (]: Applying tags to relation None
+[0m09:54:02.694459 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_date: Close
+[0m09:54:02.695459 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be19-1746-18be-afeb-b7490a9eea9f) - Closing
+[0m09:54:03.057458 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B32BBD10>]}
+[0m09:54:03.061507 [info ] [Thread-3 (]: 2 of 6 OK created sql view model default.bronze_date ........................... [[32mOK[0m in 4.51s]
+[0m09:54:03.063828 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_date
+[0m09:54:03.065027 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_product
+[0m09:54:03.067038 [info ] [Thread-3 (]: 3 of 6 START sql view model default.bronze_product ............................. [RUN]
+[0m09:54:03.071185 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_product) - Creating connection
+[0m09:54:03.072417 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_product'
+[0m09:54:03.074598 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_product
+[0m09:54:03.082028 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_product"
+[0m09:54:03.087045 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_product
+[0m09:54:03.091046 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m09:54:03.095046 [debug] [Thread-3 (]: Dropping relation `danny_dbt_dev`.`default`.`bronze_product` because it is of type table
+[0m09:54:03.098046 [debug] [Thread-3 (]: Applying DROP to: `danny_dbt_dev`.`default`.`bronze_product`
+[0m09:54:03.101176 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_product"
+[0m09:54:03.102180 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_product: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_product"} */
+drop table if exists `danny_dbt_dev`.`default`.`bronze_product`
+[0m09:54:03.102180 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:54:04.635458 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be19-19f3-1339-9722-7d662f582c57) - Created
+[0m09:54:05.788227 [debug] [Thread-3 (]: SQL status: OK in 2.690 seconds
+[0m09:54:05.795402 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be19-19f3-1339-9722-7d662f582c57, command-id=01f1be19-1a32-1e47-9f71-d59afc297816) - Closing
+[0m09:54:05.804951 [debug] [Thread-3 (]: Creating view `danny_dbt_dev`.`default`.`bronze_product`
+[0m09:54:05.814324 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_product"
+[0m09:54:05.819321 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_product"
+[0m09:54:05.822699 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_product: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_product"} */
+
+  
+  
+  create or replace view `danny_dbt_dev`.`default`.`bronze_product`
+  
+  as (
+    select * from `danny_dbt_dev`.`source`.`dim_product`
+  )
+
+[0m09:54:06.915307 [debug] [Thread-3 (]: SQL status: OK in 1.090 seconds
+[0m09:54:06.919159 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be19-19f3-1339-9722-7d662f582c57, command-id=01f1be19-1ae7-1e9a-8151-3c08d82ab94b) - Closing
+[0m09:54:06.922341 [debug] [Thread-3 (]: Applying tags to relation None
+[0m09:54:06.925493 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_product: Close
+[0m09:54:06.926558 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be19-19f3-1339-9722-7d662f582c57) - Closing
+[0m09:54:07.243246 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049E0D0230>]}
+[0m09:54:07.245250 [info ] [Thread-3 (]: 3 of 6 OK created sql view model default.bronze_product ........................ [[32mOK[0m in 4.17s]
+[0m09:54:07.248247 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_product
+[0m09:54:07.250369 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_returns
+[0m09:54:07.252666 [info ] [Thread-3 (]: 4 of 6 START sql table model default.bronze_returns ............................ [RUN]
+[0m09:54:07.254791 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_returns) - Creating connection
+[0m09:54:07.255790 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_returns'
+[0m09:54:07.256792 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_returns
+[0m09:54:07.262010 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_returns"
+[0m09:54:07.265391 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_returns
+[0m09:54:07.269923 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m09:54:07.277502 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_returns"
+[0m09:54:07.280970 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_returns"
+[0m09:54:07.284087 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_returns: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_returns"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_returns`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`fact_returns`
+  
+[0m09:54:07.286434 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:54:08.890901 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be19-1c7d-1eae-879c-ee8aa9c5ff16) - Created
+[0m09:54:12.182175 [debug] [Thread-3 (]: SQL status: OK in 4.900 seconds
+[0m09:54:12.184176 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be19-1c7d-1eae-879c-ee8aa9c5ff16, command-id=01f1be19-1cbc-107c-8d8f-5e0b39250d35) - Closing
+[0m09:54:12.187176 [debug] [Thread-3 (]: Applying tags to relation None
+[0m09:54:12.191206 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_returns: Close
+[0m09:54:12.192212 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be19-1c7d-1eae-879c-ee8aa9c5ff16) - Closing
+[0m09:54:12.535888 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B2E89400>]}
+[0m09:54:12.537889 [info ] [Thread-3 (]: 4 of 6 OK created sql table model default.bronze_returns ....................... [[32mOK[0m in 5.28s]
+[0m09:54:12.539925 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_returns
+[0m09:54:12.541228 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_sales
+[0m09:54:12.543982 [info ] [Thread-3 (]: 5 of 6 START sql view model default.bronze_sales ............................... [RUN]
+[0m09:54:12.546345 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_sales) - Creating connection
+[0m09:54:12.547521 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_sales'
+[0m09:54:12.548532 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_sales
+[0m09:54:12.560183 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_sales"
+[0m09:54:12.564378 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_sales
+[0m09:54:12.568378 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m09:54:12.572380 [debug] [Thread-3 (]: Dropping relation `danny_dbt_dev`.`default`.`bronze_sales` because it is of type table
+[0m09:54:12.578763 [debug] [Thread-3 (]: Applying DROP to: `danny_dbt_dev`.`default`.`bronze_sales`
+[0m09:54:12.582290 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_sales"
+[0m09:54:12.584632 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_sales: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_sales"} */
+drop table if exists `danny_dbt_dev`.`default`.`bronze_sales`
+[0m09:54:12.585631 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:54:14.411031 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be19-1fb1-1ede-a08e-a3a335af1259) - Created
+[0m09:54:15.485295 [debug] [Thread-3 (]: SQL status: OK in 2.900 seconds
+[0m09:54:15.487296 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be19-1fb1-1ede-a08e-a3a335af1259, command-id=01f1be19-2006-1d51-8539-a3813edc87e9) - Closing
+[0m09:54:15.490295 [debug] [Thread-3 (]: Creating view `danny_dbt_dev`.`default`.`bronze_sales`
+[0m09:54:15.493295 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_sales"
+[0m09:54:15.496297 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_sales"
+[0m09:54:15.498296 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_sales: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_sales"} */
+
+  
+  
+  create or replace view `danny_dbt_dev`.`default`.`bronze_sales`
+  
+  as (
+    select * from `danny_dbt_dev`.`source`.`fact_sales`
+  )
+
+[0m09:54:16.715350 [debug] [Thread-3 (]: SQL status: OK in 1.220 seconds
+[0m09:54:16.719350 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be19-1fb1-1ede-a08e-a3a335af1259, command-id=01f1be19-20ac-11b0-82f5-2c9602a4f368) - Closing
+[0m09:54:16.722349 [debug] [Thread-3 (]: Applying tags to relation None
+[0m09:54:16.725350 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_sales: Close
+[0m09:54:16.727351 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be19-1fb1-1ede-a08e-a3a335af1259) - Closing
+[0m09:54:17.216225 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B32BF020>]}
+[0m09:54:17.219223 [info ] [Thread-3 (]: 5 of 6 OK created sql view model default.bronze_sales .......................... [[32mOK[0m in 4.67s]
+[0m09:54:17.223222 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_sales
+[0m09:54:17.225222 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_store
+[0m09:54:17.227224 [info ] [Thread-3 (]: 6 of 6 START sql table model default.bronze_store .............................. [RUN]
+[0m09:54:17.235222 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_store) - Creating connection
+[0m09:54:17.238222 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_store'
+[0m09:54:17.241225 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_store
+[0m09:54:17.270225 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_store"
+[0m09:54:17.276224 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_store
+[0m09:54:17.296227 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m09:54:17.312227 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_store"
+[0m09:54:17.315228 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_store"
+[0m09:54:17.318229 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_store: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_store"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_store`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`dim_store`
+  
+[0m09:54:17.322228 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:54:19.356755 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be19-22b0-1fe8-b15a-1e706bda41c0) - Created
+[0m09:54:22.728503 [debug] [Thread-3 (]: SQL status: OK in 5.410 seconds
+[0m09:54:22.732530 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1be19-22b0-1fe8-b15a-1e706bda41c0, command-id=01f1be19-22f7-1839-8289-4659907f03b5) - Closing
+[0m09:54:22.738028 [debug] [Thread-3 (]: Applying tags to relation None
+[0m09:54:22.743388 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_store: Close
+[0m09:54:22.745388 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1be19-22b0-1fe8-b15a-1e706bda41c0) - Closing
+[0m09:54:23.093432 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9e68176a-6ab7-4817-bad1-d0a81f05840a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049E112840>]}
+[0m09:54:23.096431 [info ] [Thread-3 (]: 6 of 6 OK created sql table model default.bronze_store ......................... [[32mOK[0m in 5.86s]
+[0m09:54:23.101542 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_store
+[0m09:54:23.105841 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m09:54:23.106843 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m09:54:23.108841 [info ] [MainThread]: 
+[0m09:54:23.110893 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 1 minutes and 50.72 seconds (110.72s).
+[0m09:54:23.116206 [debug] [MainThread]: Command end result
+[0m09:54:23.591869 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m09:54:23.619871 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m09:54:23.644876 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m09:54:23.689877 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\run_results.json
+[0m09:54:23.691877 [info ] [MainThread]: 
+[0m09:54:23.697878 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:54:23.711878 [info ] [MainThread]: 
+[0m09:54:23.742880 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=6
+[0m09:54:23.769884 [debug] [MainThread]: Command `dbt run` succeeded at 09:54:23.768884 after 123.05 seconds
+[0m09:54:23.772884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049F7A4D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049DA9B770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002049DA9A240>]}
+[0m09:54:23.774885 [debug] [MainThread]: Flushing usage events
+[0m09:54:26.213529 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2026-10-02T17:55:36.747068Z | 01a0fdc1-e035-7f53-bdaa-c2cea62f2ce6 ====================
+17:55:37.711485 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [964ms]
+[0m23:26:37.115677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174992E9B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174992E8C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174992EB5C0>]}
+
+
+============================== 23:26:37.141678 | 78265cd8-2310-4ef2-822f-9edb1b3220fa ==============================
+[0m23:26:37.141678 [info ] [MainThread]: Running with dbt=1.12.5
+[0m23:26:37.147680 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m23:26:37.313695 [info ] [MainThread]: dbt version: 1.12.5
+[0m23:26:37.319693 [info ] [MainThread]: python version: 3.12.9
+[0m23:26:37.327694 [info ] [MainThread]: python path: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\.venv\Scripts\python.exe
+[0m23:26:37.333694 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m23:26:51.830235 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m23:26:51.832236 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m23:26:51.833237 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m23:27:02.270772 [info ] [MainThread]: Using profiles dir at C:\Users\AVITA\.dbt
+[0m23:27:02.279771 [info ] [MainThread]: Using profiles.yml file at C:\Users\AVITA\.dbt\profiles.yml
+[0m23:27:02.296771 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\dbt_project.yml
+[0m23:27:02.306783 [info ] [MainThread]: adapter type: databricks
+[0m23:27:02.311773 [info ] [MainThread]: adapter version: 1.10.9
+[0m23:27:02.849887 [info ] [MainThread]: Configuration:
+[0m23:27:02.852388 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:27:02.855405 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:27:02.859404 [info ] [MainThread]: Required dependencies:
+[0m23:27:02.861647 [debug] [MainThread]: Executing "git --help"
+[0m23:27:03.025687 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:27:03.029695 [debug] [MainThread]: STDERR: "b''"
+[0m23:27:03.032694 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:27:03.035045 [info ] [MainThread]: Connection:
+[0m23:27:03.037083 [info ] [MainThread]:   host: dbc-4e85da0d-ae0e.cloud.databricks.com
+[0m23:27:03.041481 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/bd2d44a1b285f33b
+[0m23:27:03.043763 [info ] [MainThread]:   catalog: danny_dbt_dev
+[0m23:27:03.045992 [info ] [MainThread]:   schema: default
+[0m23:27:03.048266 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m23:27:05.030645 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m23:27:05.031645 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m23:27:05.032645 [debug] [MainThread]: Using databricks connection "debug"
+[0m23:27:05.033715 [debug] [MainThread]: On debug: select 1 as id
+[0m23:27:05.034721 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:27:08.456222 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1be8a-acec-110c-ad71-732fe636bb7a) - Created
+[0m23:27:18.598138 [debug] [MainThread]: SQL status: OK in 13.560 seconds
+[0m23:27:18.602139 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1be8a-acec-110c-ad71-732fe636bb7a, command-id=01f1be8a-ae01-10cd-a179-5f38cb3035df) - Closing
+[0m23:27:19.049793 [debug] [MainThread]: On debug: Close
+[0m23:27:19.049793 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1be8a-acec-110c-ad71-732fe636bb7a) - Closing
+[0m23:27:19.416638 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:27:19.418663 [info ] [MainThread]: [32mAll checks passed![0m
+[0m23:27:19.421879 [debug] [MainThread]: Command `dbt debug` succeeded at 23:27:19.421879 after 43.18 seconds
+[0m23:27:19.422887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174975F91C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174971866F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000174971863C0>]}
+[0m23:27:19.423914 [debug] [MainThread]: Flushing usage events
+[0m23:27:21.601830 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:28:36.468152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C10F9010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182BCBCF8F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182BF5B4FE0>]}
+
+
+============================== 23:28:36.494156 | 1eda4fa0-177d-436f-9d9b-80a1f331adb2 ==============================
+[0m23:28:36.494156 [info ] [MainThread]: Running with dbt=1.12.5
+[0m23:28:36.498154 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'invocation_command': 'dbt ', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'c:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m23:28:37.474900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1eda4fa0-177d-436f-9d9b-80a1f331adb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C12241A0>]}
+[0m23:28:37.689087 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m23:28:37.698089 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m23:28:37.707088 [debug] [MainThread]: Command `cli deps` succeeded at 23:28:37.706088 after 2.05 seconds
+[0m23:28:37.709088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182BF69C380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C106EA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C10FA840>]}
+[0m23:28:37.712089 [debug] [MainThread]: Flushing usage events
+[0m23:28:40.520094 [debug] [MainThread]: An error was encountered while trying to flush usage events

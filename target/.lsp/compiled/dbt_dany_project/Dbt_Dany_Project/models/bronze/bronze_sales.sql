@@ -1,0 +1,3 @@
+
+
+select * from `danny_dbt_dev`.`source`.`fact_sales`

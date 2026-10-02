@@ -1,0 +1,22 @@
+name: 'dbt_dany_project'
+version: '1.0.0'
+
+profile: 'Dbt_Dany_Project'
+
+model-paths: ["Dbt_Dany_Project/models"]
+analysis-paths: ["Dbt_Dany_Project/analyses"]
+test-paths: ["Dbt_Dany_Project/tests"]
+seed-paths: ["Dbt_Dany_Project/seeds"]
+macro-paths: ["Dbt_Dany_Project/macros"]
+snapshot-paths: ["Dbt_Dany_Project/snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  dbt_dany_project:
+
+    bronze:
+      +materialized: table
+      
