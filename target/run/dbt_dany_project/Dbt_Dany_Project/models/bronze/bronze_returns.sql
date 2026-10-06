@@ -1,7 +1,7 @@
 
   
     
-        create or replace table `danny_dbt_dev`.`default`.`bronze_returns`
+        create or replace table `danny_dbt_dev`.`bronze`.`bronze_returns`
       
       
   using delta

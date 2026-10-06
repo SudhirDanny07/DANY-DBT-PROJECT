@@ -1,0 +1,1 @@
+Select * from `danny_dbt_dev`.`bronze`.`lookup` 
