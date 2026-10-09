@@ -1,0 +1,1 @@
+select * from `danny_dbt_dev`.`gold`.`source_gold_items`

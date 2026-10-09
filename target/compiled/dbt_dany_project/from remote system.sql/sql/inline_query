@@ -1,0 +1,1 @@
+select * from `danny_dbt_dev`.`bronze`.`bronze_returns` where 1 = 0
