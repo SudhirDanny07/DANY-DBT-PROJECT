@@ -1,0 +1,15 @@
+-- created_at: 2026-10-09T08:12:51.740534700+00:00
+-- finished_at: 2026-10-09T08:12:54.273671500+00:00
+-- elapsed: 2.5s
+-- outcome: success
+-- dialect: databricks
+-- node_id: not available
+-- query_id: not available
+-- desc: dbt run query
+
+  
+  SELECT 'source.items' AS tbl, COUNT(*) AS rows, COUNT(DISTINCT id) AS distinct_ids, MIN(updateDate) AS min_upd, MAX(updateDate) AS max_upd FROM danny_dbt_dev.source.items UNION ALL SELECT 'gold.gold_items', COUNT(*), COUNT(DISTINCT id), MIN(dbt_valid_from), MAX(dbt_valid_to) FROM danny_dbt_dev.gold.gold_items UNION ALL SELECT 'gold.source_gold_items', COUNT(*), COUNT(DISTINCT id), NULL, NULL FROM danny_dbt_dev.gold.source_gold_items
+  
+  limit 10
+;
+

@@ -1,12 +1,12 @@
 {
-    "path_count": 202,
+    "path_count": 209,
     "parsed_path_count": 0,
     "static_analysis_path_count": 0,
     "static_analysis_parsed_path_count": 0,
     "is_partial_parse_enabled": true,
     "is_static_analysis_enabled": true,
-    "read_files_elapsed": 0.44264710001880303,
-    "load_all_elapsed": 0.9486570000008214,
+    "read_files_elapsed": 0.5170400000060908,
+    "load_all_elapsed": 1.0970697000157088,
     "projects": [
         {
             "project_name": "dbt_dany_project",

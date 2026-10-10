@@ -1,0 +1,1 @@
+select * from {{ source('source__gold_items', 'gold_items') }}

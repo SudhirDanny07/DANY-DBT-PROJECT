@@ -1,0 +1,1 @@
+select * from {{ ref('source__gold_items') }}

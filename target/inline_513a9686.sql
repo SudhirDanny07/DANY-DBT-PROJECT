@@ -1,0 +1,1 @@
+SHOW TABLES IN danny_dbt_dev.source

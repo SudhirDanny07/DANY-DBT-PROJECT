@@ -1,0 +1,1 @@
+SELECT table_catalog, table_schema, table_name FROM danny_dbt_dev.information_schema.tables WHERE table_schema IN ('source','gold','default') ORDER BY table_schema, table_name

@@ -1,6 +1,6 @@
 sources:
   - name: source
-    database: danny_dbt_dev  
+    database: '{{ target.catalog }}'
     schema: source  
     tables:
       - name: fact_sales
@@ -9,3 +9,9 @@ sources:
       - name: dim_product
       - name: dim_date
       - name: dim_store
+
+  - name: source__gold_items
+    database: '{{ target.catalog }}'
+    schema: source
+    tables:
+      - name: gold_items

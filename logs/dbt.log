@@ -1345,3 +1345,1747 @@ Finished 'internal' successfully [964ms]
 [0m23:28:37.709088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182BF69C380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C106EA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C10FA840>]}
 [0m23:28:37.712089 [debug] [MainThread]: Flushing usage events
 [0m23:28:40.520094 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:55:41.726640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE393F920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE37731D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE37738F0>]}
+
+
+============================== 12:55:41.743112 | 9806313a-6066-4b3c-8e33-c60039d53aa1 ==============================
+[0m12:55:41.743112 [info ] [MainThread]: Running with dbt=1.12.5
+[0m12:55:41.745122 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m12:55:44.637863 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m12:55:44.637863 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m12:55:44.638863 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m12:55:48.110377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EF5C077D0>]}
+[0m12:55:48.278470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE53DDD90>]}
+[0m12:55:48.280471 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m12:55:49.933369 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m12:55:50.532468 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:55:50.533468 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:55:50.534468 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:55:50.568224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EF5E5FF20>]}
+[0m12:55:51.053762 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m12:55:51.074206 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m12:55:51.222117 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m12:55:51.265040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EF5D503E0>]}
+[0m12:55:51.266041 [info ] [MainThread]: Found 6 models, 6 sources, 726 macros
+[0m12:55:51.268041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EF5C5B860>]}
+[0m12:55:51.278707 [info ] [MainThread]: 
+[0m12:55:51.280736 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:55:51.282152 [info ] [MainThread]: 
+[0m12:55:51.284469 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m12:55:51.285571 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m12:55:51.458981 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev) - Creating connection
+[0m12:55:51.460978 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev'
+[0m12:55:51.463977 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev"
+[0m12:55:51.466978 [debug] [ThreadPool]: On list_danny_dbt_dev: GetSchemas(database=danny_dbt_dev, schema=None)
+[0m12:55:51.469980 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:55:54.771919 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b2-a720-195f-ad68-16489fe3d1c2) - Created
+[0m12:55:55.620168 [debug] [ThreadPool]: SQL status: OK in 4.150 seconds
+[0m12:55:55.625169 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b2-a720-195f-ad68-16489fe3d1c2, command-id=01f1c3b2-a817-1b75-953c-89aed20124ce) - Closing
+[0m12:55:55.627168 [debug] [ThreadPool]: On list_danny_dbt_dev: Close
+[0m12:55:55.629169 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b2-a720-195f-ad68-16489fe3d1c2) - Closing
+[0m12:55:56.027428 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev_default) - Creating connection
+[0m12:55:56.030427 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev_default'
+[0m12:55:56.093432 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev_default"
+[0m12:55:56.095433 [debug] [ThreadPool]: On list_danny_dbt_dev_default: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "list_danny_dbt_dev_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'danny_dbt_dev' 
+  AND table_schema = 'default'
+
+  
+[0m12:55:56.098432 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:55:57.748315 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b2-a99e-1260-812d-1b3c63eb2d69) - Created
+[0m12:55:58.598092 [debug] [ThreadPool]: SQL status: OK in 2.500 seconds
+[0m12:55:58.751971 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b2-a99e-1260-812d-1b3c63eb2d69, command-id=01f1c3b2-a9dd-1d3f-af92-f8633e2ee85f) - Closing
+[0m12:55:58.772971 [debug] [ThreadPool]: On list_danny_dbt_dev_default: Close
+[0m12:55:58.775977 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b2-a99e-1260-812d-1b3c63eb2d69) - Closing
+[0m12:55:59.161269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EDF43BC20>]}
+[0m12:55:59.267110 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_customer
+[0m12:55:59.271110 [info ] [Thread-3 (]: 1 of 6 START sql table model default.bronze_customer ........................... [RUN]
+[0m12:55:59.274267 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_customer) - Creating connection
+[0m12:55:59.276273 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_customer'
+[0m12:55:59.278274 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_customer
+[0m12:55:59.300891 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_customer"
+[0m12:55:59.306329 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_customer
+[0m12:55:59.350466 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m12:55:59.351466 [warn ] [Thread-3 (]: [[33mWARNING[0m]: Use revamped materializations based on separating create and insert.  This allows more performant column comments, as well as new column features.
+You may opt into the new behavior sooner by setting `flags.use_materialization_v2` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m12:55:59.353469 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EF74D1280>]}
+[0m12:55:59.547142 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_customer"
+[0m12:55:59.550640 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_customer"
+[0m12:55:59.552641 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_customer: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_customer"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_customer`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`dim_customer`
+  
+[0m12:55:59.554641 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:56:01.337579 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b2-abbb-148d-88a3-6e2bf9015a6c) - Created
+[0m12:56:05.115987 [debug] [Thread-3 (]: SQL status: OK in 5.560 seconds
+[0m12:56:05.117988 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1c3b2-abbb-148d-88a3-6e2bf9015a6c, command-id=01f1c3b2-ac01-10e3-8229-36e556708eb8) - Closing
+[0m12:56:05.148592 [debug] [Thread-3 (]: Applying tags to relation None
+[0m12:56:05.182067 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_customer: Close
+[0m12:56:05.183110 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b2-abbb-148d-88a3-6e2bf9015a6c) - Closing
+[0m12:56:05.543253 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EDF36F470>]}
+[0m12:56:05.547254 [info ] [Thread-3 (]: 1 of 6 OK created sql table model default.bronze_customer ...................... [[32mOK[0m in 6.26s]
+[0m12:56:05.551255 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_customer
+[0m12:56:05.553252 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_date
+[0m12:56:05.555728 [info ] [Thread-3 (]: 2 of 6 START sql view model default.bronze_date ................................ [RUN]
+[0m12:56:05.559191 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_date) - Creating connection
+[0m12:56:05.562190 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_date'
+[0m12:56:05.564632 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_date
+[0m12:56:05.568279 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_date"
+[0m12:56:05.572772 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_date
+[0m12:56:05.629586 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m12:56:05.678389 [debug] [Thread-3 (]: Creating view `danny_dbt_dev`.`default`.`bronze_date`
+[0m12:56:05.682753 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_date"
+[0m12:56:05.688754 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_date"
+[0m12:56:05.692374 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_date: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_date"} */
+
+  
+  
+  create or replace view `danny_dbt_dev`.`default`.`bronze_date`
+  
+  as (
+    select * from `danny_dbt_dev`.`source`.`dim_date`
+  )
+
+[0m12:56:05.695481 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:56:07.152360 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b2-af3e-15a3-b1e2-4c31088e743b) - Created
+[0m12:56:08.494659 [debug] [Thread-3 (]: SQL status: OK in 2.800 seconds
+[0m12:56:08.496659 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1c3b2-af3e-15a3-b1e2-4c31088e743b, command-id=01f1c3b2-af77-197e-a543-b72d0ab40e2b) - Closing
+[0m12:56:08.497660 [debug] [Thread-3 (]: Applying tags to relation None
+[0m12:56:08.516946 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_date: Close
+[0m12:56:08.517946 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b2-af3e-15a3-b1e2-4c31088e743b) - Closing
+[0m12:56:08.870695 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EF74EBFE0>]}
+[0m12:56:08.873699 [info ] [Thread-3 (]: 2 of 6 OK created sql view model default.bronze_date ........................... [[32mOK[0m in 3.31s]
+[0m12:56:08.876816 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_date
+[0m12:56:08.877825 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_product
+[0m12:56:08.878826 [info ] [Thread-3 (]: 3 of 6 START sql view model default.bronze_product ............................. [RUN]
+[0m12:56:08.880828 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_product) - Creating connection
+[0m12:56:08.881828 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_product'
+[0m12:56:08.881828 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_product
+[0m12:56:08.885828 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_product"
+[0m12:56:08.887825 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_product
+[0m12:56:08.892001 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m12:56:08.901584 [debug] [Thread-3 (]: Creating view `danny_dbt_dev`.`default`.`bronze_product`
+[0m12:56:08.904584 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_product"
+[0m12:56:08.917586 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_product"
+[0m12:56:08.920584 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_product: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_product"} */
+
+  
+  
+  create or replace view `danny_dbt_dev`.`default`.`bronze_product`
+  
+  as (
+    select * from `danny_dbt_dev`.`source`.`dim_product`
+  )
+
+[0m12:56:08.921586 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:56:10.521072 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b2-b138-141c-8a8e-7de05a982d3b) - Created
+[0m12:56:12.765305 [debug] [Thread-3 (]: SQL status: OK in 3.840 seconds
+[0m12:56:12.767309 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1c3b2-b138-141c-8a8e-7de05a982d3b, command-id=01f1c3b2-b179-1529-8435-8f9878d8a27e) - Closing
+[0m12:56:12.769649 [debug] [Thread-3 (]: Applying tags to relation None
+[0m12:56:12.770651 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_product: Close
+[0m12:56:12.771673 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b2-b138-141c-8a8e-7de05a982d3b) - Closing
+[0m12:56:13.115627 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EF74EE420>]}
+[0m12:56:13.117710 [info ] [Thread-3 (]: 3 of 6 OK created sql view model default.bronze_product ........................ [[32mOK[0m in 4.24s]
+[0m12:56:13.118709 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_product
+[0m12:56:13.120710 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_returns
+[0m12:56:13.121711 [info ] [Thread-3 (]: 4 of 6 START sql table model default.bronze_returns ............................ [RUN]
+[0m12:56:13.123711 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_returns) - Creating connection
+[0m12:56:13.123711 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_returns'
+[0m12:56:13.125166 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_returns
+[0m12:56:13.130167 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_returns"
+[0m12:56:13.133169 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_returns
+[0m12:56:13.141167 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m12:56:13.148168 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_returns"
+[0m12:56:13.151168 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_returns"
+[0m12:56:13.152169 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_returns: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_returns"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_returns`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`fact_returns`
+  
+[0m12:56:13.153169 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:56:14.612070 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b2-b3a5-1fed-89b6-28439c5dccf8) - Created
+[0m12:56:17.508280 [debug] [Thread-3 (]: SQL status: OK in 4.360 seconds
+[0m12:56:17.510665 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1c3b2-b3a5-1fed-89b6-28439c5dccf8, command-id=01f1c3b2-b3ea-168b-8d50-1818c1644141) - Closing
+[0m12:56:17.514575 [debug] [Thread-3 (]: Applying tags to relation None
+[0m12:56:17.520055 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_returns: Close
+[0m12:56:17.521056 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b2-b3a5-1fed-89b6-28439c5dccf8) - Closing
+[0m12:56:17.870923 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EF74D0380>]}
+[0m12:56:17.871955 [info ] [Thread-3 (]: 4 of 6 OK created sql table model default.bronze_returns ....................... [[32mOK[0m in 4.75s]
+[0m12:56:17.873221 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_returns
+[0m12:56:17.874415 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_sales
+[0m12:56:17.875533 [info ] [Thread-3 (]: 5 of 6 START sql view model default.bronze_sales ............................... [RUN]
+[0m12:56:17.877879 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_sales) - Creating connection
+[0m12:56:17.878893 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_sales'
+[0m12:56:17.880997 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_sales
+[0m12:56:17.891875 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_sales"
+[0m12:56:17.895640 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_sales
+[0m12:56:17.900645 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m12:56:17.903177 [debug] [Thread-3 (]: Creating view `danny_dbt_dev`.`default`.`bronze_sales`
+[0m12:56:17.905334 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_sales"
+[0m12:56:17.907492 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_sales"
+[0m12:56:17.909492 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_sales: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_sales"} */
+
+  
+  
+  create or replace view `danny_dbt_dev`.`default`.`bronze_sales`
+  
+  as (
+    select * from `danny_dbt_dev`.`source`.`fact_sales`
+  )
+
+[0m12:56:17.911604 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:56:19.314254 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b2-b67b-1566-8188-227517fba201) - Created
+[0m12:56:20.582859 [debug] [Thread-3 (]: SQL status: OK in 2.670 seconds
+[0m12:56:20.586859 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1c3b2-b67b-1566-8188-227517fba201, command-id=01f1c3b2-b6b8-156a-af8d-e3c364874601) - Closing
+[0m12:56:20.592086 [debug] [Thread-3 (]: Applying tags to relation None
+[0m12:56:20.596087 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_sales: Close
+[0m12:56:20.598086 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b2-b67b-1566-8188-227517fba201) - Closing
+[0m12:56:20.940720 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EF751D640>]}
+[0m12:56:20.943722 [info ] [Thread-3 (]: 5 of 6 OK created sql view model default.bronze_sales .......................... [[32mOK[0m in 3.06s]
+[0m12:56:20.948722 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_sales
+[0m12:56:20.950722 [debug] [Thread-3 (]: Began running node model.dbt_dany_project.bronze_store
+[0m12:56:20.952722 [info ] [Thread-3 (]: 6 of 6 START sql table model default.bronze_store .............................. [RUN]
+[0m12:56:20.955722 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_store) - Creating connection
+[0m12:56:20.957723 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_store'
+[0m12:56:20.959722 [debug] [Thread-3 (]: Began compiling node model.dbt_dany_project.bronze_store
+[0m12:56:20.967725 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_store"
+[0m12:56:20.972726 [debug] [Thread-3 (]: Began executing node model.dbt_dany_project.bronze_store
+[0m12:56:20.983723 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m12:56:21.012994 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_store"
+[0m12:56:21.019994 [debug] [Thread-3 (]: Using databricks connection "model.dbt_dany_project.bronze_store"
+[0m12:56:21.021995 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_store: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_store"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_store`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`dim_store`
+  
+[0m12:56:21.023996 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:56:22.767258 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b2-b883-1eb2-8e59-89c2a37fdeb4) - Created
+[0m12:56:25.708993 [debug] [Thread-3 (]: SQL status: OK in 4.680 seconds
+[0m12:56:25.713994 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1c3b2-b883-1eb2-8e59-89c2a37fdeb4, command-id=01f1c3b2-b8c7-17f4-84ff-11fc846bbb65) - Closing
+[0m12:56:25.719995 [debug] [Thread-3 (]: Applying tags to relation None
+[0m12:56:25.728995 [debug] [Thread-3 (]: On model.dbt_dany_project.bronze_store: Close
+[0m12:56:25.730994 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b2-b883-1eb2-8e59-89c2a37fdeb4) - Closing
+[0m12:56:26.131117 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9806313a-6066-4b3c-8e33-c60039d53aa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EF5E5FFE0>]}
+[0m12:56:26.133116 [info ] [Thread-3 (]: 6 of 6 OK created sql table model default.bronze_store ......................... [[32mOK[0m in 5.18s]
+[0m12:56:26.189122 [debug] [Thread-3 (]: Finished running node model.dbt_dany_project.bronze_store
+[0m12:56:26.197120 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m12:56:26.199310 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m12:56:26.203502 [info ] [MainThread]: 
+[0m12:56:26.206501 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 34.92 seconds (34.92s).
+[0m12:56:26.213503 [debug] [MainThread]: Command end result
+[0m12:56:26.447982 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m12:56:26.485984 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m12:56:26.524991 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m12:56:26.566990 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\run_results.json
+[0m12:56:26.570991 [info ] [MainThread]: 
+[0m12:56:26.573992 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:56:26.578993 [info ] [MainThread]: 
+[0m12:56:26.586994 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=6
+[0m12:56:26.599993 [debug] [MainThread]: Command `dbt run` succeeded at 12:56:26.599993 after 45.35 seconds
+[0m12:56:26.601994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE39A0950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE1E32840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EF5591880>]}
+[0m12:56:26.602993 [debug] [MainThread]: Flushing usage events
+[0m12:56:29.123356 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:20:36.864317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A344564440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A344D35160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A344843380>]}
+
+
+============================== 13:20:36.892845 | f38f32a5-177c-4caa-b668-01230cce66f0 ==============================
+[0m13:20:36.892845 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:20:36.897891 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt parse', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m13:20:40.751677 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:20:40.753754 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:20:40.754758 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:20:45.040112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f38f32a5-177c-4caa-b668-01230cce66f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A344643BF0>]}
+[0m13:20:45.225080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f38f32a5-177c-4caa-b668-01230cce66f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A358111430>]}
+[0m13:20:45.227085 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m13:20:48.196203 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m13:20:48.878899 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m13:20:48.879943 [debug] [MainThread]: Partial parsing: added file: dbt_dany_project://Dbt_Dany_Project/snapshots\gold_items.yml
+[0m13:20:49.824112 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Snapshot 'snapshot.dbt_dany_project.gold_items' (Dbt_Dany_Project/snapshots\gold_items.yml) depends on a node named 'source__gold_items' which was not found
+[0m13:20:49.828597 [debug] [MainThread]: Command `dbt parse` failed at 13:20:49.828597 after 13.52 seconds
+[0m13:20:49.830689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3466C9B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A35860A6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A342A01DF0>]}
+[0m13:20:49.831697 [debug] [MainThread]: Flushing usage events
+[0m13:20:51.921274 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:24:49.166895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027471771220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027471601820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027471039BB0>]}
+
+
+============================== 13:24:49.180808 | 95f68180-080e-420b-bb5c-52319daef734 ==============================
+[0m13:24:49.180808 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:24:49.183219 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt build --target prod', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m13:24:52.138246 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:24:52.140246 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:24:52.141247 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:24:55.565136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '95f68180-080e-420b-bb5c-52319daef734', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274056C1E50>]}
+[0m13:24:55.804358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '95f68180-080e-420b-bb5c-52319daef734', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002746ED182F0>]}
+[0m13:24:55.806387 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m13:24:56.887634 [debug] [MainThread]: checksum: d754026ef940ea5cea7db7c444b743c223b258869c560d512b82cc38a5915575, vars: {}, profile: Dbt_Dany_Project, target: prod, version: 1.12.5
+[0m13:24:57.104785 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m13:24:57.105794 [debug] [MainThread]: previous checksum: d754026ef940ea5cea7db7c444b743c223b258869c560d512b82cc38a5915575, current checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0
+[0m13:24:57.106803 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m13:24:57.107812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '95f68180-080e-420b-bb5c-52319daef734', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027471013050>]}
+[0m13:25:02.982223 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Snapshot 'snapshot.dbt_dany_project.gold_items' (Dbt_Dany_Project/snapshots\gold_items.yml) depends on a node named 'source__gold_items' which was not found
+[0m13:25:02.985222 [debug] [MainThread]: Command `dbt build` failed at 13:25:02.985222 after 14.17 seconds
+[0m13:25:02.986223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274731AE060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027406F64EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027406ED3530>]}
+[0m13:25:02.987222 [debug] [MainThread]: Flushing usage events
+[0m13:25:04.868749 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:26:20.145397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6440DB290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6464F3C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6464F3D10>]}
+[0m13:26:20.147432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F36D4FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F292A000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F34221E0>]}
+
+
+============================== 13:26:20.159596 | fb0cfe59-bac7-4e35-a08f-60be001c6085 ==============================
+[0m13:26:20.159596 [info ] [MainThread]: Running with dbt=1.12.5
+
+
+============================== 13:26:20.161596 | 36cb6706-858f-4562-adac-fd089855871d ==============================
+[0m13:26:20.161596 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:26:20.161596 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt show --inline select * from `danny_dbt_dev`.`gold`.`gold_items` where 1 = 0 --limit 0', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m13:26:20.163596 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt show --inline show tables in `danny_dbt_dev`.`gold` --limit 50', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m13:26:23.667151 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:26:23.669414 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:26:23.670428 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:26:23.780368 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:26:23.781387 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:26:23.782396 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:26:28.289984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36cb6706-858f-4562-adac-fd089855871d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F58D0470>]}
+[0m13:26:28.293173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fb0cfe59-bac7-4e35-a08f-60be001c6085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E648593FB0>]}
+[0m13:26:28.546215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '36cb6706-858f-4562-adac-fd089855871d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207FF4E37A0>]}
+[0m13:26:28.560758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fb0cfe59-bac7-4e35-a08f-60be001c6085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E65A14BD70>]}
+[0m13:26:28.610964 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m13:26:28.612966 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m13:26:30.407960 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m13:26:30.474209 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m13:26:31.378196 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m13:26:31.380197 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m13:26:31.381197 [debug] [MainThread]: Partial parsing: added file: dbt_dany_project://Dbt_Dany_Project/snapshots\gold_items.yml
+[0m13:26:31.383196 [debug] [MainThread]: Partial parsing: added file: dbt_dany_project://Dbt_Dany_Project/snapshots\gold_items.yml
+[0m13:26:32.688342 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Snapshot 'snapshot.dbt_dany_project.gold_items' (Dbt_Dany_Project/snapshots\gold_items.yml) depends on a node named 'source__gold_items' which was not found
+[0m13:26:32.694344 [debug] [MainThread]: Command `dbt show` failed at 13:26:32.693346 after 13.12 seconds
+[0m13:26:32.696343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6445BAA20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E65BEFCC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E644390890>]}
+[0m13:26:32.698345 [debug] [MainThread]: Flushing usage events
+[0m13:26:32.701894 [debug] [MainThread]: Command `dbt show` failed at 13:26:32.701894 after 13.13 seconds
+[0m13:26:32.702962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F36D4FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207887B7890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002078874FA10>]}
+[0m13:26:32.703970 [debug] [MainThread]: Flushing usage events
+[0m13:26:34.853518 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:26:34.924939 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:27:14.344281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028420A49AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028420A49BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028420A4BE60>]}
+
+
+============================== 13:27:14.361453 | 39dbe738-c821-4aa6-a18e-6e805bcc86a0 ==============================
+[0m13:27:14.361453 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:27:14.364499 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt parse', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m13:27:18.665763 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:27:18.669904 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:27:18.673023 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:27:23.197709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '39dbe738-c821-4aa6-a18e-6e805bcc86a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028420C4A690>]}
+[0m13:27:23.513805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '39dbe738-c821-4aa6-a18e-6e805bcc86a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002841E89E480>]}
+[0m13:27:23.517805 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m13:27:25.645705 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m13:27:27.307188 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:27:27.308191 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:27:27.309191 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:27:27.360531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '39dbe738-c821-4aa6-a18e-6e805bcc86a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002841C70F9B0>]}
+[0m13:27:27.377726 [info ] [MainThread]: Performance info: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\perf_info.json
+[0m13:27:28.659770 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m13:27:28.698149 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m13:27:29.249225 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m13:27:29.269227 [debug] [MainThread]: Command `dbt parse` succeeded at 13:27:29.259226 after 15.46 seconds
+[0m13:27:29.272227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028434397740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002841EEC6330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002841EEC5EE0>]}
+[0m13:27:29.274226 [debug] [MainThread]: Flushing usage events
+[0m13:27:32.134879 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:27:50.248075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA4631ACF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA45578A40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA4557A7E0>]}
+
+
+============================== 13:27:50.263937 | c0d57502-698d-42bb-9afe-f74949f4b2d1 ==============================
+[0m13:27:50.263937 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:27:50.266021 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': "dbt show --inline select * from {{ source('source', 'gold_items') }} where 1 = 0 --limit 0", 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m13:27:50.285223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209A01327E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209A0132EA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002099E525580>]}
+
+
+============================== 13:27:50.309354 | 7f72a89b-c6ca-4ec4-817f-517cf32578c8 ==============================
+[0m13:27:50.309354 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:27:50.314356 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt compile --select gold_items', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m13:27:54.007492 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:27:54.009664 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:27:54.009664 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:27:54.076781 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:27:54.077780 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:27:54.079780 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:27:57.485306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7f72a89b-c6ca-4ec4-817f-517cf32578c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209B1FE6960>]}
+[0m13:27:57.565517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c0d57502-698d-42bb-9afe-f74949f4b2d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA5A2D0230>]}
+[0m13:27:57.769919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7f72a89b-c6ca-4ec4-817f-517cf32578c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209B1347950>]}
+[0m13:27:57.772914 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m13:27:57.898827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c0d57502-698d-42bb-9afe-f74949f4b2d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA592D3D70>]}
+[0m13:27:57.953447 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m13:27:59.553488 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m13:27:59.628867 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m13:28:00.438915 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:28:00.441138 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:28:00.442152 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:28:00.445296 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:28:00.447330 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:28:00.449351 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:28:00.473886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c0d57502-698d-42bb-9afe-f74949f4b2d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA5B413770>]}
+[0m13:28:00.503243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7f72a89b-c6ca-4ec4-817f-517cf32578c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209B35D18E0>]}
+[0m13:28:01.437170 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m13:28:01.460844 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m13:28:01.551338 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m13:28:01.570337 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m13:28:01.624668 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m13:28:01.740531 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m13:28:01.794946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7f72a89b-c6ca-4ec4-817f-517cf32578c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209B35D36B0>]}
+[0m13:28:01.797348 [info ] [MainThread]: Found 6 models, 1 snapshot, 7 sources, 726 macros
+[0m13:28:01.799645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7f72a89b-c6ca-4ec4-817f-517cf32578c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209A01B1370>]}
+[0m13:28:01.808649 [info ] [MainThread]: 
+[0m13:28:01.810653 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:28:01.811689 [info ] [MainThread]: 
+[0m13:28:01.815179 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m13:28:01.816374 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:28:01.845589 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev_default) - Creating connection
+[0m13:28:01.846589 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev_default'
+[0m13:28:01.907085 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev_default"
+[0m13:28:01.909080 [debug] [ThreadPool]: On list_danny_dbt_dev_default: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "list_danny_dbt_dev_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'danny_dbt_dev' 
+  AND table_schema = 'default'
+
+  
+[0m13:28:01.911082 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:28:02.728956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c0d57502-698d-42bb-9afe-f74949f4b2d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA5B4F3770>]}
+[0m13:28:02.731955 [info ] [MainThread]: Found 6 models, 1 snapshot, 1 sql operation, 7 sources, 726 macros
+[0m13:28:02.736958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c0d57502-698d-42bb-9afe-f74949f4b2d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA5918A9C0>]}
+[0m13:28:02.744022 [info ] [MainThread]: 
+[0m13:28:02.745041 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:28:02.747074 [info ] [MainThread]: 
+[0m13:28:02.748098 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m13:28:02.750120 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:28:02.773708 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev_default_gold) - Creating connection
+[0m13:28:02.774708 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev_default_gold'
+[0m13:28:02.809821 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev_default_gold"
+[0m13:28:02.811818 [debug] [ThreadPool]: On list_danny_dbt_dev_default_gold: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "list_danny_dbt_dev_default_gold"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'danny_dbt_dev' 
+  AND table_schema = 'default_gold'
+
+  
+[0m13:28:02.812817 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:28:05.357087 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-25cc-1417-ab02-3ec84665001c) - Created
+[0m13:28:05.606758 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-2606-17ff-bdf7-b3dd50f63f5e) - Created
+[0m13:28:15.542759 [debug] [ThreadPool]: SQL status: OK in 12.730 seconds
+[0m13:28:15.613860 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b7-2606-17ff-bdf7-b3dd50f63f5e, command-id=01f1c3b7-26f6-1433-8df8-c97cc8f3ae76) - Closing
+[0m13:28:15.621535 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b7-25cc-1417-ab02-3ec84665001c, command-id=01f1c3b7-26d1-198d-a23f-b82b28e28d3b) - Closing
+[0m13:28:16.058327 [debug] [ThreadPool]: On list_danny_dbt_dev_default_gold: Close
+[0m13:28:16.059329 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-2606-17ff-bdf7-b3dd50f63f5e) - Closing
+[0m13:28:16.083199 [debug] [ThreadPool]: On list_danny_dbt_dev_default: Close
+[0m13:28:16.084220 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-25cc-1417-ab02-3ec84665001c) - Closing
+[0m13:28:16.410982 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev_default) - Creating connection
+[0m13:28:16.413216 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev_default'
+[0m13:28:16.416221 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev_default"
+[0m13:28:16.417226 [debug] [ThreadPool]: On list_danny_dbt_dev_default: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "list_danny_dbt_dev_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'danny_dbt_dev' 
+  AND table_schema = 'default'
+
+  
+[0m13:28:16.418222 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:28:16.471288 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev_default_gold) - Creating connection
+[0m13:28:16.475736 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev_default_gold'
+[0m13:28:16.480634 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev_default_gold"
+[0m13:28:16.482638 [debug] [ThreadPool]: On list_danny_dbt_dev_default_gold: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "list_danny_dbt_dev_default_gold"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'danny_dbt_dev' 
+  AND table_schema = 'default_gold'
+
+  
+[0m13:28:16.483673 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:28:17.889375 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-2e0b-1869-b510-9f128a79bdb8) - Created
+[0m13:28:18.015472 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-2e1e-1005-8588-808683b95256) - Created
+[0m13:28:19.235666 [debug] [ThreadPool]: SQL status: OK in 2.750 seconds
+[0m13:28:19.240880 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b7-2e1e-1005-8588-808683b95256, command-id=01f1c3b7-2e5c-11ef-802f-eec245290f27) - Closing
+[0m13:28:19.242881 [debug] [ThreadPool]: On list_danny_dbt_dev_default_gold: Close
+[0m13:28:19.243882 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-2e1e-1005-8588-808683b95256) - Closing
+[0m13:28:19.416783 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m13:28:19.422808 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b7-2e0b-1869-b510-9f128a79bdb8, command-id=01f1c3b7-2e49-1e36-9bbe-596c5cc2d12a) - Closing
+[0m13:28:19.424807 [debug] [ThreadPool]: On list_danny_dbt_dev_default: Close
+[0m13:28:19.425808 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-2e0b-1869-b510-9f128a79bdb8) - Closing
+[0m13:28:19.603325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7f72a89b-c6ca-4ec4-817f-517cf32578c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209B3615100>]}
+[0m13:28:19.629315 [debug] [Thread-3 (]: Began running node snapshot.dbt_dany_project.gold_items
+[0m13:28:19.630316 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=snapshot.dbt_dany_project.gold_items) - Creating connection
+[0m13:28:19.632736 [debug] [Thread-3 (]: Acquiring new databricks connection 'snapshot.dbt_dany_project.gold_items'
+[0m13:28:19.632736 [debug] [Thread-3 (]: Began compiling node snapshot.dbt_dany_project.gold_items
+[0m13:28:19.654505 [debug] [Thread-3 (]: Writing injected SQL for node "snapshot.dbt_dany_project.gold_items"
+[0m13:28:19.660990 [debug] [Thread-3 (]: Began executing node snapshot.dbt_dany_project.gold_items
+[0m13:28:19.667240 [debug] [Thread-3 (]: Finished running node snapshot.dbt_dany_project.gold_items
+[0m13:28:19.671939 [debug] [MainThread]: Command end result
+[0m13:28:19.792296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c0d57502-698d-42bb-9afe-f74949f4b2d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA47F4D880>]}
+[0m13:28:19.807471 [debug] [Thread-3 (]: Began running node sql_operation.dbt_dany_project.inline_query
+[0m13:28:19.810891 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=sql_operation.dbt_dany_project.inline_query) - Creating connection
+[0m13:28:19.814891 [debug] [Thread-3 (]: Acquiring new databricks connection 'sql_operation.dbt_dany_project.inline_query'
+[0m13:28:19.818182 [debug] [Thread-3 (]: Began compiling node sql_operation.dbt_dany_project.inline_query
+[0m13:28:19.852378 [debug] [Thread-3 (]: Writing injected SQL for node "sql_operation.dbt_dany_project.inline_query"
+[0m13:28:19.859173 [debug] [Thread-3 (]: Began executing node sql_operation.dbt_dany_project.inline_query
+[0m13:28:19.899527 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m13:28:19.901529 [debug] [Thread-3 (]: Using databricks connection "sql_operation.dbt_dany_project.inline_query"
+[0m13:28:19.903528 [debug] [Thread-3 (]: On sql_operation.dbt_dany_project.inline_query: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "sql_operation.dbt_dany_project.inline_query"} */
+
+  
+  select * from `danny_dbt_dev`.`source`.`gold_items` where 1 = 0
+  
+  limit 0
+
+[0m13:28:19.907015 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:28:19.916640 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m13:28:19.932977 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m13:28:19.991024 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\run_results.json
+[0m13:28:19.994083 [info ] [MainThread]: Compiled node 'gold_items' is:
+select * from `danny_dbt_dev`.`source`.`gold_items`
+[0m13:28:20.000083 [debug] [MainThread]: Command `dbt compile` succeeded at 13:28:19.999082 after 30.24 seconds
+[0m13:28:20.002081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002099C275580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209B38DD0A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000209B38DCCE0>]}
+[0m13:28:20.004084 [debug] [MainThread]: Flushing usage events
+[0m13:28:21.694053 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b7-3042-1eaa-bb80-2b92d4849189) - Created
+[0m13:28:22.209929 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:28:22.905907 [debug] [Thread-3 (]: Databricks adapter: Exception while trying to execute query
+/* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "sql_operation.dbt_dany_project.inline_query"} */
+
+  
+  select * from `danny_dbt_dev`.`source`.`gold_items` where 1 = 0
+  
+  limit 0
+
+: [TABLE_OR_VIEW_NOT_FOUND] The table or view `danny_dbt_dev`.`source`.`gold_items` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `danny_dbt_dev`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 4 pos 16
+Error properties: diagnostic-info=org.apache.hive.service.cli.HiveSQLException: Error running query: [TABLE_OR_VIEW_NOT_FOUND] org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `danny_dbt_dev`.`source`.`gold_items` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `danny_dbt_dev`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 4 pos 16
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:57)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1304)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:128)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:996)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$7(SparkExecuteStatementOperation.scala:736)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.execution.SQLExecution$.withRootExecution(SQLExecution.scala:1889)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$6(SparkExecuteStatementOperation.scala:736)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.execution.SQLExecution$.withPreExecutionPhaseWatch(SQLExecution.scala:1792)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$3(SparkExecuteStatementOperation.scala:735)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.DatabricksTracingHelper.$anonfun$withSpan$3(DatabricksSparkTracingHelper.scala:288)
+	at com.databricks.tracing.OtelTracing$.$anonfun$withSyncTracing$1(OtelTracing.scala:441)
+	at com.databricks.logging.AttributionContext$.withValue(AttributionContext.scala:354)
+	at com.databricks.tracing.OtelTracing$.withSyncTracing(OtelTracing.scala:440)
+	at com.databricks.spark.util.DatabricksTracingHelper.withSpan(DatabricksSparkTracingHelper.scala:288)
+	at com.databricks.spark.util.DBRTracing$.withSpan(DBRTracing.scala:87)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$19(ThriftLocalProperties.scala:256)
+	at com.databricks.logging.AttributionContextTracing.$anonfun$withAttributionContext$1(AttributionContextTracing.scala:146)
+	at com.databricks.logging.AttributionContext$.withValue(AttributionContext.scala:354)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext(AttributionContextTracing.scala:144)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext$(AttributionContextTracing.scala:141)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionContext(DatabricksSparkUsageLogger.scala:32)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags(AttributionContextTracing.scala:201)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags$(AttributionContextTracing.scala:182)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags(DatabricksSparkUsageLogger.scala:32)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags0(DatabricksSparkUsageLogger.scala:108)
+	at com.databricks.spark.util.DatabricksSparkUsageLogger.withAttributionTags(DatabricksSparkUsageLogger.scala:277)
+	at com.databricks.spark.util.UsageLogging.$anonfun$withAttributionTags$1(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:780)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:789)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags$(UsageLogger.scala:666)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withAttributionTags(SparkExecuteStatementOperation.scala:82)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$16(ThriftLocalProperties.scala:255)
+	at com.databricks.spark.util.IdentityClaim$.withClaim(IdentityClaim.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:250)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:90)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:82)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:711)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.logging.AttributionContext$.withValue(AttributionContext.scala:354)
+	at com.databricks.spark.util.DatabricksTracingHelper.withOtelSpanLifecycle(DatabricksSparkTracingHelper.scala:137)
+	at com.databricks.spark.util.DatabricksTracingHelper.withSpanFromParent(DatabricksSparkTracingHelper.scala:191)
+	at com.databricks.spark.util.DBRTracing$.withSpanFromParent(DBRTracing.scala:68)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:711)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:693)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.authentication.util.SubjectUtil.doAs(SubjectUtil.java:328)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1958)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:753)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `danny_dbt_dev`.`source`.`gold_items` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `danny_dbt_dev`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 4 pos 16
+	at org.apache.spark.sql.catalyst.ExtendedAnalysisException.copyPlan(ExtendedAnalysisException.scala:97)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1257)
+	... 58 more
+, operation-id=01f1c3b7-308d-1d1f-934e-ee7d156d44db
+[0m13:28:22.909923 [debug] [Thread-3 (]: On sql_operation.dbt_dany_project.inline_query: Close
+[0m13:28:22.911898 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1c3b7-3042-1eaa-bb80-2b92d4849189) - Closing
+[0m13:28:23.434250 [debug] [Thread-3 (]: Database Error in sql_operation inline_query (from remote system.sql)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `danny_dbt_dev`.`source`.`gold_items` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `danny_dbt_dev`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 4 pos 16
+[0m13:28:23.436252 [debug] [Thread-3 (]: Finished running node sql_operation.dbt_dany_project.inline_query
+[0m13:28:23.438496 [debug] [Thread-6 (]: Marking all children of 'sql_operation.dbt_dany_project.inline_query' to be skipped because of status 'error'.  Reason: Database Error in sql_operation inline_query (from remote system.sql)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `danny_dbt_dev`.`source`.`gold_items` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `danny_dbt_dev`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 4 pos 16.
+[0m13:28:23.443968 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Database Error in sql_operation inline_query (from remote system.sql)
+    [TABLE_OR_VIEW_NOT_FOUND] The table or view `danny_dbt_dev`.`source`.`gold_items` cannot be found. Verify the spelling and correctness of the schema and catalog.
+    Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `danny_dbt_dev`.`default`].
+    If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+    To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 4 pos 16
+[0m13:28:23.453153 [debug] [MainThread]: Command `dbt show` failed at 13:28:23.452151 after 33.70 seconds
+[0m13:28:23.456154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA4621DA60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA5A08AE70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA5B644170>]}
+[0m13:28:23.459157 [debug] [MainThread]: Flushing usage events
+[0m13:28:25.503643 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:30:58.952592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC331ADFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC37ED3EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC37ED21E0>]}
+
+
+============================== 13:30:58.973098 | 0c886bc1-7b1b-4f0c-a107-fae7e1a38d1b ==============================
+[0m13:30:58.973098 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:30:58.975145 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt parse', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m13:31:04.245576 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:31:04.247575 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:31:04.249576 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:31:09.020484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0c886bc1-7b1b-4f0c-a107-fae7e1a38d1b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC4A1F6960>]}
+[0m13:31:09.268124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0c886bc1-7b1b-4f0c-a107-fae7e1a38d1b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC49388980>]}
+[0m13:31:09.271123 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m13:31:10.825673 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m13:31:11.826644 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:31:11.827651 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:31:11.828761 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:31:11.878659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0c886bc1-7b1b-4f0c-a107-fae7e1a38d1b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC33C2F980>]}
+[0m13:31:11.893828 [info ] [MainThread]: Performance info: C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\perf_info.json
+[0m13:31:12.822639 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m13:31:12.839088 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m13:31:13.004894 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m13:31:13.010111 [debug] [MainThread]: Command `dbt parse` succeeded at 13:31:13.008896 after 14.80 seconds
+[0m13:31:13.012359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC356F55E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC4BA1B980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC356DD9A0>]}
+[0m13:31:13.014356 [debug] [MainThread]: Flushing usage events
+[0m13:31:15.365403 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:31:33.504070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5838B3920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5811DE2A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5838B39B0>]}
+
+
+============================== 13:31:33.527381 | e0aba5ad-3b88-464a-b810-13ec94eb6abd ==============================
+[0m13:31:33.527381 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:31:33.530381 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt compile --select gold_items', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m13:31:33.537803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857AD13BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000285790DAFF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028576DC59D0>]}
+
+
+============================== 13:31:33.554808 | e449b5dd-00d5-440e-86ed-9170d03e64e1 ==============================
+[0m13:31:33.554808 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:31:33.557805 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt ls --resource-type source', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m13:31:37.404208 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:31:37.407208 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:31:37.410530 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:31:37.664535 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:31:37.666539 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:31:37.668536 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:31:40.558995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e449b5dd-00d5-440e-86ed-9170d03e64e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857CA08C50>]}
+[0m13:31:40.833911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e449b5dd-00d5-440e-86ed-9170d03e64e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002850C1A7920>]}
+[0m13:31:40.836987 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m13:31:40.936123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e0aba5ad-3b88-464a-b810-13ec94eb6abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B595D46A20>]}
+[0m13:31:41.270807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e0aba5ad-3b88-464a-b810-13ec94eb6abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5954646B0>]}
+[0m13:31:41.272808 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m13:31:42.399634 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m13:31:42.993995 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m13:31:43.081091 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:31:43.082089 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:31:43.082089 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:31:43.157106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e449b5dd-00d5-440e-86ed-9170d03e64e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002857AF645F0>]}
+[0m13:31:44.027316 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:31:44.028318 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:31:44.029317 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:31:44.079401 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e0aba5ad-3b88-464a-b810-13ec94eb6abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B585573170>]}
+[0m13:31:44.190478 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m13:31:44.214482 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m13:31:44.350592 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m13:31:44.405147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e449b5dd-00d5-440e-86ed-9170d03e64e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002850E6F9C40>]}
+[0m13:31:44.409478 [info ] [MainThread]: Found 6 models, 1 snapshot, 7 sources, 726 macros
+[0m13:31:44.411478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e449b5dd-00d5-440e-86ed-9170d03e64e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002850E868E90>]}
+[0m13:31:44.416825 [info ] [MainThread]: source:dbt_dany_project.source.dim_customer
+[0m13:31:44.419825 [info ] [MainThread]: source:dbt_dany_project.source.dim_date
+[0m13:31:44.421825 [info ] [MainThread]: source:dbt_dany_project.source.dim_product
+[0m13:31:44.423003 [info ] [MainThread]: source:dbt_dany_project.source.dim_store
+[0m13:31:44.424006 [info ] [MainThread]: source:dbt_dany_project.source.fact_returns
+[0m13:31:44.426005 [info ] [MainThread]: source:dbt_dany_project.source.fact_sales
+[0m13:31:44.427005 [info ] [MainThread]: source:dbt_dany_project.source__gold_items.gold_items
+[0m13:31:44.431007 [debug] [MainThread]: Command `dbt ls` succeeded at 13:31:44.431007 after 11.80 seconds
+[0m13:31:44.433005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028575F0E210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028578BD5820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002850CE28500>]}
+[0m13:31:44.434007 [debug] [MainThread]: Flushing usage events
+[0m13:31:45.011845 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m13:31:45.027848 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m13:31:45.197421 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m13:31:45.257732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e0aba5ad-3b88-464a-b810-13ec94eb6abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5973EB8C0>]}
+[0m13:31:45.260732 [info ] [MainThread]: Found 6 models, 1 snapshot, 7 sources, 726 macros
+[0m13:31:45.263732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e0aba5ad-3b88-464a-b810-13ec94eb6abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5817B29F0>]}
+[0m13:31:45.275732 [info ] [MainThread]: 
+[0m13:31:45.278734 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:31:45.282733 [info ] [MainThread]: 
+[0m13:31:45.286805 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m13:31:45.288088 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:31:45.316018 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev_default) - Creating connection
+[0m13:31:45.318020 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev_default'
+[0m13:31:45.383995 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev_default"
+[0m13:31:45.386368 [debug] [ThreadPool]: On list_danny_dbt_dev_default: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "list_danny_dbt_dev_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'danny_dbt_dev' 
+  AND table_schema = 'default'
+
+  
+[0m13:31:45.389370 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:31:46.667575 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:31:48.537782 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-aacf-1e02-9aef-1947a1d78da2) - Created
+[0m13:31:49.641807 [debug] [ThreadPool]: SQL status: OK in 4.250 seconds
+[0m13:31:49.710609 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b7-aacf-1e02-9aef-1947a1d78da2, command-id=01f1c3b7-abd8-1c43-b0c5-72decc4e482e) - Closing
+[0m13:31:49.712626 [debug] [ThreadPool]: On list_danny_dbt_dev_default: Close
+[0m13:31:49.712626 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-aacf-1e02-9aef-1947a1d78da2) - Closing
+[0m13:31:50.088632 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev_default_gold) - Creating connection
+[0m13:31:50.091646 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev_default_gold'
+[0m13:31:50.094641 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev_default_gold"
+[0m13:31:50.096641 [debug] [ThreadPool]: On list_danny_dbt_dev_default_gold: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "list_danny_dbt_dev_default_gold"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'danny_dbt_dev' 
+  AND table_schema = 'default_gold'
+
+  
+[0m13:31:50.096641 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:31:51.491459 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-ad5f-153d-b4aa-37307e9615aa) - Created
+[0m13:31:52.105726 [debug] [ThreadPool]: SQL status: OK in 2.010 seconds
+[0m13:31:52.124964 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b7-ad5f-153d-b4aa-37307e9615aa, command-id=01f1c3b7-ad98-1733-8956-f607310a6017) - Closing
+[0m13:31:52.126961 [debug] [ThreadPool]: On list_danny_dbt_dev_default_gold: Close
+[0m13:31:52.126961 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-ad5f-153d-b4aa-37307e9615aa) - Closing
+[0m13:31:52.477894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e0aba5ad-3b88-464a-b810-13ec94eb6abd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B585538560>]}
+[0m13:31:52.493820 [debug] [Thread-3 (]: Began running node snapshot.dbt_dany_project.gold_items
+[0m13:31:52.494826 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=snapshot.dbt_dany_project.gold_items) - Creating connection
+[0m13:31:52.495834 [debug] [Thread-3 (]: Acquiring new databricks connection 'snapshot.dbt_dany_project.gold_items'
+[0m13:31:52.496841 [debug] [Thread-3 (]: Began compiling node snapshot.dbt_dany_project.gold_items
+[0m13:31:52.513674 [debug] [Thread-3 (]: Writing injected SQL for node "snapshot.dbt_dany_project.gold_items"
+[0m13:31:52.516949 [debug] [Thread-3 (]: Began executing node snapshot.dbt_dany_project.gold_items
+[0m13:31:52.520615 [debug] [Thread-3 (]: Finished running node snapshot.dbt_dany_project.gold_items
+[0m13:31:52.525993 [debug] [MainThread]: Command end result
+[0m13:31:52.696839 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m13:31:52.863848 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m13:31:52.945857 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m13:31:53.004705 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\run_results.json
+[0m13:31:53.006707 [info ] [MainThread]: Compiled node 'gold_items' is:
+select * from `danny_dbt_dev`.`source`.`gold_items`
+[0m13:31:53.011704 [debug] [MainThread]: Command `dbt compile` succeeded at 13:31:53.011704 after 20.32 seconds
+[0m13:31:53.013716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B581ECBE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B581EC99D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B58390B740>]}
+[0m13:31:53.015705 [debug] [MainThread]: Flushing usage events
+[0m13:31:55.608659 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:33:25.126726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D55ACC2FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D55D3191C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D55D779880>]}
+
+
+============================== 13:33:25.135245 | 56e4a55d-2347-4a73-939d-0b48c382ef01 ==============================
+[0m13:33:25.135245 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:33:25.136554 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\AVITA\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt build', 'log_path': 'C:\\Users\\AVITA\\OneDrive\\Documents\\DANY_DBT_PROJECT\\logs'}
+[0m13:33:27.526755 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:33:27.528759 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:33:27.529762 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:33:29.769102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D55F410260>]}
+[0m13:33:29.919578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D55F4681D0>]}
+[0m13:33:29.922584 [info ] [MainThread]: Registered adapter: databricks=1.10.9
+[0m13:33:31.187354 [debug] [MainThread]: checksum: 6d752400c351118dcca0ff632afa006278fbd705599f0dd58dfccf6d5145c9f0, vars: {}, profile: Dbt_Dany_Project, target: dev, version: 1.12.5
+[0m13:33:31.744401 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:33:31.745401 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:33:31.745401 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:33:31.764785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D572BD9B80>]}
+[0m13:33:32.284180 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m13:33:32.294395 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m13:33:32.387118 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m13:33:32.509342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D572AC69F0>]}
+[0m13:33:32.511343 [info ] [MainThread]: Found 6 models, 1 snapshot, 7 sources, 726 macros
+[0m13:33:32.523861 [info ] [MainThread]: 
+[0m13:33:32.525913 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:33:32.528085 [info ] [MainThread]: 
+[0m13:33:32.531137 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m13:33:32.533495 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:33:32.556536 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev) - Creating connection
+[0m13:33:32.558563 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev'
+[0m13:33:32.558563 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev"
+[0m13:33:32.559564 [debug] [ThreadPool]: On list_danny_dbt_dev: GetSchemas(database=danny_dbt_dev, schema=None)
+[0m13:33:32.560564 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:33:35.408615 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-ea8b-1162-a657-d03f2b04dd9f) - Created
+[0m13:33:36.303206 [debug] [ThreadPool]: SQL status: OK in 3.740 seconds
+[0m13:33:36.309206 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b7-ea8b-1162-a657-d03f2b04dd9f, command-id=01f1c3b7-eb8a-17a2-aadf-06a384716042) - Closing
+[0m13:33:36.311288 [debug] [ThreadPool]: On list_danny_dbt_dev: Close
+[0m13:33:36.313615 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-ea8b-1162-a657-d03f2b04dd9f) - Closing
+[0m13:33:36.679137 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev) - Creating connection
+[0m13:33:36.680137 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev'
+[0m13:33:36.681138 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev"
+[0m13:33:36.683215 [debug] [ThreadPool]: On list_danny_dbt_dev: GetSchemas(database=danny_dbt_dev, schema=None)
+[0m13:33:36.684247 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:33:38.177853 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-ecf0-1542-90e6-4c99b196d520) - Created
+[0m13:33:39.519348 [debug] [ThreadPool]: SQL status: OK in 2.840 seconds
+[0m13:33:39.524346 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b7-ecf0-1542-90e6-4c99b196d520, command-id=01f1c3b7-ed2f-1bad-9577-887bf89c6ea6) - Closing
+[0m13:33:39.526344 [debug] [ThreadPool]: On list_danny_dbt_dev: Close
+[0m13:33:39.528347 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-ecf0-1542-90e6-4c99b196d520) - Closing
+[0m13:33:39.877659 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=create_danny_dbt_dev_default_gold) - Creating connection
+[0m13:33:39.878664 [debug] [ThreadPool]: Acquiring new databricks connection 'create_danny_dbt_dev_default_gold'
+[0m13:33:39.881665 [debug] [ThreadPool]: Creating schema "database: "danny_dbt_dev"
+schema: "default_gold"
+"
+[0m13:33:39.912248 [debug] [ThreadPool]: Using databricks connection "create_danny_dbt_dev_default_gold"
+[0m13:33:39.913256 [debug] [ThreadPool]: On create_danny_dbt_dev_default_gold: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "create_danny_dbt_dev_default_gold"} */
+create schema if not exists `danny_dbt_dev`.`default_gold`
+  
+[0m13:33:39.914256 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:33:41.581984 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-eef4-1b52-8ca3-40246dc00466) - Created
+[0m13:33:42.369070 [debug] [ThreadPool]: SQL status: OK in 2.450 seconds
+[0m13:33:42.371139 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b7-eef4-1b52-8ca3-40246dc00466, command-id=01f1c3b7-ef37-1778-a18a-110787f04aa4) - Closing
+[0m13:33:42.372186 [debug] [ThreadPool]: On create_danny_dbt_dev_default_gold: Close
+[0m13:33:42.372186 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-eef4-1b52-8ca3-40246dc00466) - Closing
+[0m13:33:42.720862 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev_default) - Creating connection
+[0m13:33:42.721997 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev_default'
+[0m13:33:42.737422 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev_default"
+[0m13:33:42.738424 [debug] [ThreadPool]: On list_danny_dbt_dev_default: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "list_danny_dbt_dev_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'danny_dbt_dev' 
+  AND table_schema = 'default'
+
+  
+[0m13:33:42.739426 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:33:44.205426 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-f086-1714-8189-bf4c89d93fb3) - Created
+[0m13:33:44.950282 [debug] [ThreadPool]: SQL status: OK in 2.210 seconds
+[0m13:33:44.991432 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b7-f086-1714-8189-bf4c89d93fb3, command-id=01f1c3b7-f0c8-15f4-9ac6-2c9be5c2e5ac) - Closing
+[0m13:33:44.996693 [debug] [ThreadPool]: On list_danny_dbt_dev_default: Close
+[0m13:33:45.000343 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-f086-1714-8189-bf4c89d93fb3) - Closing
+[0m13:33:45.383190 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_danny_dbt_dev_default_gold) - Creating connection
+[0m13:33:45.387327 [debug] [ThreadPool]: Acquiring new databricks connection 'list_danny_dbt_dev_default_gold'
+[0m13:33:45.389448 [debug] [ThreadPool]: Using databricks connection "list_danny_dbt_dev_default_gold"
+[0m13:33:45.390454 [debug] [ThreadPool]: On list_danny_dbt_dev_default_gold: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "connection_name": "list_danny_dbt_dev_default_gold"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'danny_dbt_dev' 
+  AND table_schema = 'default_gold'
+
+  
+[0m13:33:45.391459 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:33:47.152675 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-f238-1d49-a306-cb9cb6b97d0c) - Created
+[0m13:33:47.904546 [debug] [ThreadPool]: SQL status: OK in 2.510 seconds
+[0m13:33:47.910622 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1c3b7-f238-1d49-a306-cb9cb6b97d0c, command-id=01f1c3b7-f28b-1889-856b-173f49a50685) - Closing
+[0m13:33:47.911717 [debug] [ThreadPool]: On list_danny_dbt_dev_default_gold: Close
+[0m13:33:47.912717 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1c3b7-f238-1d49-a306-cb9cb6b97d0c) - Closing
+[0m13:33:48.319454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5727D1A30>]}
+[0m13:33:48.332132 [debug] [Thread-6 (]: Began running node model.dbt_dany_project.bronze_customer
+[0m13:33:48.334271 [info ] [Thread-6 (]: 1 of 7 START sql table model default.bronze_customer ........................... [RUN]
+[0m13:33:48.337525 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_customer) - Creating connection
+[0m13:33:48.338524 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_customer'
+[0m13:33:48.338524 [debug] [Thread-6 (]: Began compiling node model.dbt_dany_project.bronze_customer
+[0m13:33:48.353227 [debug] [Thread-6 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_customer"
+[0m13:33:48.356787 [debug] [Thread-6 (]: Began executing node model.dbt_dany_project.bronze_customer
+[0m13:33:48.411238 [debug] [Thread-6 (]: MATERIALIZING TABLE
+[0m13:33:48.413276 [warn ] [Thread-6 (]: [[33mWARNING[0m]: Use revamped materializations based on separating create and insert.  This allows more performant column comments, as well as new column features.
+You may opt into the new behavior sooner by setting `flags.use_materialization_v2` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m13:33:48.415657 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D573748AD0>]}
+[0m13:33:48.589935 [debug] [Thread-6 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_customer"
+[0m13:33:48.594402 [debug] [Thread-6 (]: Using databricks connection "model.dbt_dany_project.bronze_customer"
+[0m13:33:48.595507 [debug] [Thread-6 (]: On model.dbt_dany_project.bronze_customer: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_customer"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_customer`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`dim_customer`
+  
+[0m13:33:48.597768 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m13:33:50.089314 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b7-f406-1d7f-bf7c-c21b5b66d143) - Created
+[0m13:34:02.496043 [debug] [Thread-6 (]: SQL status: OK in 13.900 seconds
+[0m13:34:02.498059 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1c3b7-f406-1d7f-bf7c-c21b5b66d143, command-id=01f1c3b7-f44a-1045-8911-1bd92f28c94c) - Closing
+[0m13:34:02.920742 [debug] [Thread-6 (]: Applying tags to relation None
+[0m13:34:02.962413 [debug] [Thread-6 (]: On model.dbt_dany_project.bronze_customer: Close
+[0m13:34:02.963436 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b7-f406-1d7f-bf7c-c21b5b66d143) - Closing
+[0m13:34:03.324961 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D55D087E90>]}
+[0m13:34:03.326112 [info ] [Thread-6 (]: 1 of 7 OK created sql table model default.bronze_customer ...................... [[32mOK[0m in 14.97s]
+[0m13:34:03.327116 [debug] [Thread-6 (]: Finished running node model.dbt_dany_project.bronze_customer
+[0m13:34:03.328247 [debug] [Thread-6 (]: Began running node model.dbt_dany_project.bronze_date
+[0m13:34:03.330305 [info ] [Thread-6 (]: 2 of 7 START sql view model default.bronze_date ................................ [RUN]
+[0m13:34:03.331583 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_date) - Creating connection
+[0m13:34:03.332587 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_date'
+[0m13:34:03.333605 [debug] [Thread-6 (]: Began compiling node model.dbt_dany_project.bronze_date
+[0m13:34:03.337936 [debug] [Thread-6 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_date"
+[0m13:34:03.340341 [debug] [Thread-6 (]: Began executing node model.dbt_dany_project.bronze_date
+[0m13:34:03.365078 [debug] [Thread-6 (]: MATERIALIZING VIEW
+[0m13:34:03.383809 [debug] [Thread-6 (]: Creating view `danny_dbt_dev`.`default`.`bronze_date`
+[0m13:34:03.385818 [debug] [Thread-6 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_date"
+[0m13:34:03.389098 [debug] [Thread-6 (]: Using databricks connection "model.dbt_dany_project.bronze_date"
+[0m13:34:03.391102 [debug] [Thread-6 (]: On model.dbt_dany_project.bronze_date: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_date"} */
+
+  
+  
+  create or replace view `danny_dbt_dev`.`default`.`bronze_date`
+  
+  as (
+    select * from `danny_dbt_dev`.`source`.`dim_date`
+  )
+
+[0m13:34:03.391102 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m13:34:04.958544 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b7-fcdf-1959-855d-3bb281dd16b6) - Created
+[0m13:34:06.473500 [debug] [Thread-6 (]: SQL status: OK in 3.080 seconds
+[0m13:34:06.475949 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1c3b7-fcdf-1959-855d-3bb281dd16b6, command-id=01f1c3b7-fd27-1656-a3eb-b4b44cb0950c) - Closing
+[0m13:34:06.478951 [debug] [Thread-6 (]: Applying tags to relation None
+[0m13:34:06.484950 [debug] [Thread-6 (]: On model.dbt_dany_project.bronze_date: Close
+[0m13:34:06.485950 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b7-fcdf-1959-855d-3bb281dd16b6) - Closing
+[0m13:34:06.850659 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D572890BF0>]}
+[0m13:34:06.852690 [info ] [Thread-6 (]: 2 of 7 OK created sql view model default.bronze_date ........................... [[32mOK[0m in 3.52s]
+[0m13:34:06.855189 [debug] [Thread-6 (]: Finished running node model.dbt_dany_project.bronze_date
+[0m13:34:06.856270 [debug] [Thread-6 (]: Began running node model.dbt_dany_project.bronze_product
+[0m13:34:06.858665 [info ] [Thread-6 (]: 3 of 7 START sql view model default.bronze_product ............................. [RUN]
+[0m13:34:06.861671 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_product) - Creating connection
+[0m13:34:06.862664 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_product'
+[0m13:34:06.864666 [debug] [Thread-6 (]: Began compiling node model.dbt_dany_project.bronze_product
+[0m13:34:06.869663 [debug] [Thread-6 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_product"
+[0m13:34:06.873864 [debug] [Thread-6 (]: Began executing node model.dbt_dany_project.bronze_product
+[0m13:34:06.878865 [debug] [Thread-6 (]: MATERIALIZING VIEW
+[0m13:34:06.885868 [debug] [Thread-6 (]: Creating view `danny_dbt_dev`.`default`.`bronze_product`
+[0m13:34:06.889611 [debug] [Thread-6 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_product"
+[0m13:34:06.892933 [debug] [Thread-6 (]: Using databricks connection "model.dbt_dany_project.bronze_product"
+[0m13:34:06.894934 [debug] [Thread-6 (]: On model.dbt_dany_project.bronze_product: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_product"} */
+
+  
+  
+  create or replace view `danny_dbt_dev`.`default`.`bronze_product`
+  
+  as (
+    select * from `danny_dbt_dev`.`source`.`dim_product`
+  )
+
+[0m13:34:06.896931 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m13:34:08.444919 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b7-ff01-1d62-8b5f-6c35c66e53f0) - Created
+[0m13:34:09.707405 [debug] [Thread-6 (]: SQL status: OK in 2.810 seconds
+[0m13:34:09.708411 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1c3b7-ff01-1d62-8b5f-6c35c66e53f0, command-id=01f1c3b7-ff3b-1219-9dac-1a1a0f72f733) - Closing
+[0m13:34:09.710419 [debug] [Thread-6 (]: Applying tags to relation None
+[0m13:34:09.711424 [debug] [Thread-6 (]: On model.dbt_dany_project.bronze_product: Close
+[0m13:34:09.712496 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b7-ff01-1d62-8b5f-6c35c66e53f0) - Closing
+[0m13:34:10.058661 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5736E03E0>]}
+[0m13:34:10.063006 [info ] [Thread-6 (]: 3 of 7 OK created sql view model default.bronze_product ........................ [[32mOK[0m in 3.20s]
+[0m13:34:10.067230 [debug] [Thread-6 (]: Finished running node model.dbt_dany_project.bronze_product
+[0m13:34:10.070430 [debug] [Thread-6 (]: Began running node model.dbt_dany_project.bronze_returns
+[0m13:34:10.072498 [info ] [Thread-6 (]: 4 of 7 START sql table model default.bronze_returns ............................ [RUN]
+[0m13:34:10.075500 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_returns) - Creating connection
+[0m13:34:10.076501 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_returns'
+[0m13:34:10.078500 [debug] [Thread-6 (]: Began compiling node model.dbt_dany_project.bronze_returns
+[0m13:34:10.083501 [debug] [Thread-6 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_returns"
+[0m13:34:10.087501 [debug] [Thread-6 (]: Began executing node model.dbt_dany_project.bronze_returns
+[0m13:34:10.100502 [debug] [Thread-6 (]: MATERIALIZING TABLE
+[0m13:34:10.111557 [debug] [Thread-6 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_returns"
+[0m13:34:10.115558 [debug] [Thread-6 (]: Using databricks connection "model.dbt_dany_project.bronze_returns"
+[0m13:34:10.116558 [debug] [Thread-6 (]: On model.dbt_dany_project.bronze_returns: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_returns"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_returns`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`fact_returns`
+  
+[0m13:34:10.118558 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m13:34:11.806279 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b8-00fd-1e1e-b0c3-86011860f0a8) - Created
+[0m13:34:15.153251 [debug] [Thread-6 (]: SQL status: OK in 5.040 seconds
+[0m13:34:15.155253 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1c3b8-00fd-1e1e-b0c3-86011860f0a8, command-id=01f1c3b8-013b-16d8-b47e-0dca7abe897e) - Closing
+[0m13:34:15.158363 [debug] [Thread-6 (]: Applying tags to relation None
+[0m13:34:15.161365 [debug] [Thread-6 (]: On model.dbt_dany_project.bronze_returns: Close
+[0m13:34:15.162364 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b8-00fd-1e1e-b0c3-86011860f0a8) - Closing
+[0m13:34:15.529786 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D57371E060>]}
+[0m13:34:15.531794 [info ] [Thread-6 (]: 4 of 7 OK created sql table model default.bronze_returns ....................... [[32mOK[0m in 5.45s]
+[0m13:34:15.533798 [debug] [Thread-6 (]: Finished running node model.dbt_dany_project.bronze_returns
+[0m13:34:15.535795 [debug] [Thread-6 (]: Began running node model.dbt_dany_project.bronze_sales
+[0m13:34:15.536846 [info ] [Thread-6 (]: 5 of 7 START sql view model default.bronze_sales ............................... [RUN]
+[0m13:34:15.539862 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_sales) - Creating connection
+[0m13:34:15.540862 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_sales'
+[0m13:34:15.542862 [debug] [Thread-6 (]: Began compiling node model.dbt_dany_project.bronze_sales
+[0m13:34:15.549862 [debug] [Thread-6 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_sales"
+[0m13:34:15.554059 [debug] [Thread-6 (]: Began executing node model.dbt_dany_project.bronze_sales
+[0m13:34:15.558060 [debug] [Thread-6 (]: MATERIALIZING VIEW
+[0m13:34:15.563059 [debug] [Thread-6 (]: Creating view `danny_dbt_dev`.`default`.`bronze_sales`
+[0m13:34:15.566058 [debug] [Thread-6 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_sales"
+[0m13:34:15.570489 [debug] [Thread-6 (]: Using databricks connection "model.dbt_dany_project.bronze_sales"
+[0m13:34:15.573489 [debug] [Thread-6 (]: On model.dbt_dany_project.bronze_sales: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_sales"} */
+
+  
+  
+  create or replace view `danny_dbt_dev`.`default`.`bronze_sales`
+  
+  as (
+    select * from `danny_dbt_dev`.`source`.`fact_sales`
+  )
+
+[0m13:34:15.576588 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m13:34:17.242550 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b8-043b-154c-ae55-218494a32b8e) - Created
+[0m13:34:18.440832 [debug] [Thread-6 (]: SQL status: OK in 2.860 seconds
+[0m13:34:18.443829 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1c3b8-043b-154c-ae55-218494a32b8e, command-id=01f1c3b8-047b-1a43-af9c-98543e956505) - Closing
+[0m13:34:18.446828 [debug] [Thread-6 (]: Applying tags to relation None
+[0m13:34:18.448828 [debug] [Thread-6 (]: On model.dbt_dany_project.bronze_sales: Close
+[0m13:34:18.450828 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b8-043b-154c-ae55-218494a32b8e) - Closing
+[0m13:34:18.868571 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5736E3260>]}
+[0m13:34:18.870047 [info ] [Thread-6 (]: 5 of 7 OK created sql view model default.bronze_sales .......................... [[32mOK[0m in 3.33s]
+[0m13:34:18.872238 [debug] [Thread-6 (]: Finished running node model.dbt_dany_project.bronze_sales
+[0m13:34:18.873477 [debug] [Thread-6 (]: Began running node model.dbt_dany_project.bronze_store
+[0m13:34:18.874614 [info ] [Thread-6 (]: 6 of 7 START sql table model default.bronze_store .............................. [RUN]
+[0m13:34:18.876649 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.dbt_dany_project.bronze_store) - Creating connection
+[0m13:34:18.877731 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.dbt_dany_project.bronze_store'
+[0m13:34:18.878730 [debug] [Thread-6 (]: Began compiling node model.dbt_dany_project.bronze_store
+[0m13:34:18.882961 [debug] [Thread-6 (]: Writing injected SQL for node "model.dbt_dany_project.bronze_store"
+[0m13:34:18.887024 [debug] [Thread-6 (]: Began executing node model.dbt_dany_project.bronze_store
+[0m13:34:18.890022 [debug] [Thread-6 (]: MATERIALIZING TABLE
+[0m13:34:18.899447 [debug] [Thread-6 (]: Writing runtime sql for node "model.dbt_dany_project.bronze_store"
+[0m13:34:18.902449 [debug] [Thread-6 (]: Using databricks connection "model.dbt_dany_project.bronze_store"
+[0m13:34:18.903448 [debug] [Thread-6 (]: On model.dbt_dany_project.bronze_store: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "model.dbt_dany_project.bronze_store"} */
+
+  
+    
+        create or replace table `danny_dbt_dev`.`default`.`bronze_store`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      select * from `danny_dbt_dev`.`source`.`dim_store`
+  
+[0m13:34:18.904872 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m13:34:20.375479 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b8-0614-1682-a749-8566d94ce43c) - Created
+[0m13:34:24.360751 [debug] [Thread-6 (]: SQL status: OK in 5.460 seconds
+[0m13:34:24.363476 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1c3b8-0614-1682-a749-8566d94ce43c, command-id=01f1c3b8-0657-1470-9f8b-8cd3432e342d) - Closing
+[0m13:34:24.366579 [debug] [Thread-6 (]: Applying tags to relation None
+[0m13:34:24.370580 [debug] [Thread-6 (]: On model.dbt_dany_project.bronze_store: Close
+[0m13:34:24.371580 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b8-0614-1682-a749-8566d94ce43c) - Closing
+[0m13:34:24.728765 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D57371EBA0>]}
+[0m13:34:24.731208 [info ] [Thread-6 (]: 6 of 7 OK created sql table model default.bronze_store ......................... [[32mOK[0m in 5.85s]
+[0m13:34:24.733290 [debug] [Thread-6 (]: Finished running node model.dbt_dany_project.bronze_store
+[0m13:34:24.734434 [debug] [Thread-6 (]: Began running node snapshot.dbt_dany_project.gold_items
+[0m13:34:24.735587 [info ] [Thread-6 (]: 7 of 7 START snapshot default_gold.gold_items .................................. [RUN]
+[0m13:34:24.737729 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=snapshot.dbt_dany_project.gold_items) - Creating connection
+[0m13:34:24.737729 [debug] [Thread-6 (]: Acquiring new databricks connection 'snapshot.dbt_dany_project.gold_items'
+[0m13:34:24.738852 [debug] [Thread-6 (]: Began compiling node snapshot.dbt_dany_project.gold_items
+[0m13:34:24.744902 [debug] [Thread-6 (]: Writing injected SQL for node "snapshot.dbt_dany_project.gold_items"
+[0m13:34:24.747959 [debug] [Thread-6 (]: Began executing node snapshot.dbt_dany_project.gold_items
+[0m13:34:24.908932 [debug] [Thread-6 (]: Using databricks connection "snapshot.dbt_dany_project.gold_items"
+[0m13:34:24.910026 [debug] [Thread-6 (]: On snapshot.dbt_dany_project.gold_items: /* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "snapshot.dbt_dany_project.gold_items"} */
+select * from (
+        
+    
+
+    select *,
+        md5(coalesce(cast(id as string ), '')
+         || '|' || coalesce(cast(updateDate as string ), '')
+        ) as dbt_scd_id,
+        updateDate as dbt_updated_at,
+        updateDate as dbt_valid_from,
+        
+  
+  coalesce(nullif(updateDate, updateDate), to_date('9999-12-31'))
+  as dbt_valid_to
+from (
+        select * from `danny_dbt_dev`.`source`.`gold_items`
+    ) sbq
+
+
+
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+[0m13:34:24.911056 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m13:34:26.464912 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b8-09b2-10b5-9321-9d771a51679f) - Created
+[0m13:34:27.288412 [debug] [Thread-6 (]: Databricks adapter: Exception while trying to execute query
+/* {"app": "dbt", "dbt_version": "1.12.5", "dbt_databricks_version": "1.10.9", "databricks_sql_connector_version": "4.6.0", "profile_name": "Dbt_Dany_Project", "target_name": "dev", "node_id": "snapshot.dbt_dany_project.gold_items"} */
+select * from (
+        
+    
+
+    select *,
+        md5(coalesce(cast(id as string ), '')
+         || '|' || coalesce(cast(updateDate as string ), '')
+        ) as dbt_scd_id,
+        updateDate as dbt_updated_at,
+        updateDate as dbt_valid_from,
+        
+  
+  coalesce(nullif(updateDate, updateDate), to_date('9999-12-31'))
+  as dbt_valid_to
+from (
+        select * from `danny_dbt_dev`.`source`.`gold_items`
+    ) sbq
+
+
+
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+: [TABLE_OR_VIEW_NOT_FOUND] The table or view `danny_dbt_dev`.`source`.`gold_items` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `danny_dbt_dev`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 17 pos 22
+Error properties: diagnostic-info=org.apache.hive.service.cli.HiveSQLException: Error running query: [TABLE_OR_VIEW_NOT_FOUND] org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `danny_dbt_dev`.`source`.`gold_items` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `danny_dbt_dev`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 17 pos 22
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:57)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1304)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:128)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:996)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$7(SparkExecuteStatementOperation.scala:736)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.execution.SQLExecution$.withRootExecution(SQLExecution.scala:1889)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$6(SparkExecuteStatementOperation.scala:736)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.execution.SQLExecution$.withPreExecutionPhaseWatch(SQLExecution.scala:1792)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$3(SparkExecuteStatementOperation.scala:735)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.DatabricksTracingHelper.$anonfun$withSpan$3(DatabricksSparkTracingHelper.scala:288)
+	at com.databricks.tracing.OtelTracing$.$anonfun$withSyncTracing$1(OtelTracing.scala:441)
+	at com.databricks.logging.AttributionContext$.withValue(AttributionContext.scala:354)
+	at com.databricks.tracing.OtelTracing$.withSyncTracing(OtelTracing.scala:440)
+	at com.databricks.spark.util.DatabricksTracingHelper.withSpan(DatabricksSparkTracingHelper.scala:288)
+	at com.databricks.spark.util.DBRTracing$.withSpan(DBRTracing.scala:87)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$19(ThriftLocalProperties.scala:256)
+	at com.databricks.logging.AttributionContextTracing.$anonfun$withAttributionContext$1(AttributionContextTracing.scala:146)
+	at com.databricks.logging.AttributionContext$.withValue(AttributionContext.scala:354)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext(AttributionContextTracing.scala:144)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext$(AttributionContextTracing.scala:141)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionContext(DatabricksSparkUsageLogger.scala:32)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags(AttributionContextTracing.scala:201)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags$(AttributionContextTracing.scala:182)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags(DatabricksSparkUsageLogger.scala:32)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags0(DatabricksSparkUsageLogger.scala:108)
+	at com.databricks.spark.util.DatabricksSparkUsageLogger.withAttributionTags(DatabricksSparkUsageLogger.scala:277)
+	at com.databricks.spark.util.UsageLogging.$anonfun$withAttributionTags$1(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:780)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:789)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags$(UsageLogger.scala:666)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withAttributionTags(SparkExecuteStatementOperation.scala:82)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$16(ThriftLocalProperties.scala:255)
+	at com.databricks.spark.util.IdentityClaim$.withClaim(IdentityClaim.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:250)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:90)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:82)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:711)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.logging.AttributionContext$.withValue(AttributionContext.scala:354)
+	at com.databricks.spark.util.DatabricksTracingHelper.withOtelSpanLifecycle(DatabricksSparkTracingHelper.scala:137)
+	at com.databricks.spark.util.DatabricksTracingHelper.withSpanFromParent(DatabricksSparkTracingHelper.scala:191)
+	at com.databricks.spark.util.DBRTracing$.withSpanFromParent(DBRTracing.scala:68)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:711)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:693)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.authentication.util.SubjectUtil.doAs(SubjectUtil.java:328)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1958)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:753)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `danny_dbt_dev`.`source`.`gold_items` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `danny_dbt_dev`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 17 pos 22
+	at org.apache.spark.sql.catalyst.ExtendedAnalysisException.copyPlan(ExtendedAnalysisException.scala:97)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1257)
+	... 58 more
+, operation-id=01f1c3b8-09fc-1d53-9a2d-1bc941326485
+[0m13:34:27.292413 [debug] [Thread-6 (]: On snapshot.dbt_dany_project.gold_items: Close
+[0m13:34:27.294414 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1c3b8-09b2-10b5-9321-9d771a51679f) - Closing
+[0m13:34:27.689910 [debug] [Thread-6 (]: Database Error in snapshot gold_items (Dbt_Dany_Project/snapshots\gold_items.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `danny_dbt_dev`.`source`.`gold_items` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `danny_dbt_dev`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 17 pos 22
+[0m13:34:27.691147 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '56e4a55d-2347-4a73-939d-0b48c382ef01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D57370BFE0>]}
+[0m13:34:27.693147 [error] [Thread-6 (]: 7 of 7 ERROR snapshotting default_gold.gold_items .............................. [[31mERROR[0m in 2.95s]
+[0m13:34:27.696152 [debug] [Thread-6 (]: Finished running node snapshot.dbt_dany_project.gold_items
+[0m13:34:27.699149 [debug] [Thread-9 (]: Marking all children of 'snapshot.dbt_dany_project.gold_items' to be skipped because of status 'error'.  Reason: Database Error in snapshot gold_items (Dbt_Dany_Project/snapshots\gold_items.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `danny_dbt_dev`.`source`.`gold_items` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `danny_dbt_dev`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 17 pos 22.
+[0m13:34:27.705186 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m13:34:27.706188 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:34:27.708184 [info ] [MainThread]: 
+[0m13:34:27.709184 [info ] [MainThread]: Finished running 1 snapshot, 3 table models, 3 view models in 0 hours 0 minutes and 55.18 seconds (55.18s).
+[0m13:34:27.714546 [debug] [MainThread]: Command end result
+[0m13:34:27.916426 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\manifest.json
+[0m13:34:27.930137 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\semantic_manifest.json
+[0m13:34:27.949794 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\osi_document.json
+[0m13:34:27.997377 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\AVITA\OneDrive\Documents\DANY_DBT_PROJECT\target\run_results.json
+[0m13:34:27.999378 [info ] [MainThread]: 
+[0m13:34:28.000381 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m13:34:28.003380 [info ] [MainThread]: 
+[0m13:34:28.006619 [error] [MainThread]: [[31mERROR[0m]: in snapshot gold_items (Dbt_Dany_Project/snapshots\gold_items.yml)
+[0m13:34:28.008901 [error] [MainThread]:   Database Error in snapshot gold_items (Dbt_Dany_Project/snapshots\gold_items.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `danny_dbt_dev`.`source`.`gold_items` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `danny_dbt_dev`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 17 pos 22
+[0m13:34:28.010900 [info ] [MainThread]: 
+[0m13:34:28.014901 [info ] [MainThread]:   compiled code at target\compiled\dbt_dany_project\Dbt_Dany_Project/snapshots\gold_items.yml\gold_items.sql
+[0m13:34:28.016902 [info ] [MainThread]: 
+[0m13:34:28.019901 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=7
+[0m13:34:28.029906 [debug] [MainThread]: Command `dbt build` failed at 13:34:28.028918 after 63.38 seconds
+[0m13:34:28.031360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D55D369F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D55D054950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D55D056E70>]}
+[0m13:34:28.032679 [debug] [MainThread]: Flushing usage events
+[0m13:34:30.424093 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2026-10-09T08:10:39.511463Z | 01a11fb6-d9fb-75b1-9988-aab183212633 ====================
+08:10:39.515595 [info ]: dbt 2.0.6
+08:10:39.522037 [info ]: Started loading project
+08:10:39.532206 [info ]: Loading ~/.dbt/profiles.yml
+08:10:39.548457 [debug]:    Started loading packages
+08:10:39.555876 [debug]:     Loaded [  0.01s] packages
+08:10:39.564609 [info ]: Finished loading project [  0.04s]
+08:10:39.566389 [info ]: Started parsing
+08:10:39.730681 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/properties.yml [  0.00s]
+08:10:39.731572 [debug]: Finished parsing Dbt_Dany_Project/models/source/sources.yml [  0.00s]
+08:10:39.732301 [debug]: Finished parsing Dbt_Dany_Project/snapshots/gold_items.yml [  0.00s]
+08:10:39.745586 [debug]: Finished parsing Dbt_Dany_Project/snapshots/gold_items.yml:2:11 (gold_items) [  0.00s]
+08:10:39.749125 [debug]: Finished parsing target\inline_513a9686.sql [  0.01s]
+08:10:39.756968 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_customer.sql [  0.00s]
+08:10:39.759688 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_date.sql [  0.00s]
+08:10:39.761203 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_product.sql [  0.00s]
+08:10:39.762802 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_returns.sql [  0.00s]
+08:10:39.769413 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_sales.sql [  0.01s]
+08:10:39.770594 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_store.sql [  0.00s]
+08:10:40.492851 [info ]: Finished parsing [  0.93s]
+08:10:40.516750 [info ]: Started scheduling
+08:10:40.530442 [info ]: Finished scheduling [  0.01s]
+08:10:40.600548 [info ]: Started building task graph
+08:10:40.612308 [info ]: Finished building task graph [  0.01s]
+08:10:41.587702 [info ]: Started rendering (1 nodes)
+08:10:41.591770 [info ]: Started model default.inline
+08:10:41.592881 [debug]: Started rendering model default.inline
+08:10:41.673717 [debug]: Compiled SQL for node model..inline at target\compiled\target\inline_513a9686.sql
+08:10:41.680931 [debug]: Finished rendering [  0.09s] model default.inline [success]
+08:10:41.681005 [info ]: Finished rendering [  0.09s] (1 nodes, 0 skipped, 0 errors)
+08:10:41.683090 [info ]: Started analyzing (1 nodes)
+08:10:41.683148 [debug]: Started analyzing model default.inline
+08:10:41.743602 [debug]: Finished analyzing [  0.06s] model default.inline [success]
+08:10:41.743676 [info ]: Finished analyzing [  0.06s] (1 nodes, 0 skipped, 0 errors)
+08:10:41.743726 [info ]: Started running (1 nodes)
+08:10:41.743749 [info ]: Started running model default.inline
+08:10:41.753716 [debug]: Databricks driver resolved: databricks 0.21.0.dev+dbt0.21.13
+08:10:46.655514 [debug]: Query executed on node unknown:
+
+  
+  SHOW TABLES IN danny_dbt_dev.source
+  
+  limit 100
+
+08:10:46.660098 [error]: [Generic (dbt1000)]: InvalidData: failed to execute query: databricks: execution error: failed to execute query: unexpected operation state ERROR_STATE: 
+[PARSE_SYNTAX_ERROR] Syntax error at or near 'limit'. SQLSTATE: 42601 (line 5, pos 2)
+
+== SQL ==
+
+  
+  SHOW TABLES IN danny_dbt_dev.source
+  
+  limit 100
+--^^^
+ (sqlstate: [0, 0, 0, 0, 0], vendor_code: -2147483648)
+08:10:46.664195 [info ]: Finished running [  4.92s] model default.inline [error]
+08:10:46.664242 [info ]: Finished running [  4.92s] (1 nodes, 0 skipped, 1 errors)
+08:10:46.664261 [info ]:     Failed model default.inline (ephemeral) [1 of 1 in 5.07s]
+08:10:46.860705 [info ]: New version available 2.0.8 (run `dbt system update`)
+08:10:47.131639 [info ]: 
+==================== Execution Summary =====================
+Finished 'show' with 1 error for target 'dev' [7.6s]
+==================== 2026-10-09T08:11:05.386621Z | 01a11fb7-3f26-79a1-b4aa-50cd7f138f7c ====================
+08:11:05.386822 [info ]: dbt 2.0.6
+08:11:05.387217 [info ]: Started loading project
+08:11:05.396034 [info ]: Loading ~/.dbt/profiles.yml
+08:11:05.421141 [debug]:    Started loading packages
+08:11:05.429630 [debug]:     Loaded [  0.01s] packages
+08:11:05.436220 [info ]: Finished loading project [  0.05s]
+08:11:05.437588 [info ]: Started parsing
+08:11:05.574715 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/properties.yml [  0.00s]
+08:11:05.575984 [debug]: Finished parsing Dbt_Dany_Project/models/source/sources.yml [  0.00s]
+08:11:05.576887 [debug]: Finished parsing Dbt_Dany_Project/snapshots/gold_items.yml [  0.00s]
+08:11:05.579091 [debug]: Finished parsing target\inline_5bbbfebc.sql [  0.00s]
+08:11:05.612977 [debug]: Finished parsing Dbt_Dany_Project/snapshots/gold_items.yml:2:11 (gold_items) [  0.02s]
+08:11:05.618028 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_customer.sql [  0.00s]
+08:11:05.620626 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_date.sql [  0.00s]
+08:11:05.622888 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_product.sql [  0.00s]
+08:11:05.624652 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_returns.sql [  0.00s]
+08:11:05.627122 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_sales.sql [  0.00s]
+08:11:05.628990 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_store.sql [  0.00s]
+08:11:06.260170 [info ]: Finished parsing [  0.82s]
+08:11:06.263459 [info ]: Started scheduling
+08:11:06.263922 [info ]: Finished scheduling [  0.00s]
+08:11:06.281699 [info ]: Started building task graph
+08:11:06.281951 [info ]: Finished building task graph [  0.00s]
+08:11:06.631025 [info ]: Started rendering (1 nodes)
+08:11:06.631112 [info ]: Started model default.inline
+08:11:06.631153 [debug]: Started rendering model default.inline
+08:11:06.636727 [debug]: Compiled SQL for node model..inline at target\compiled\target\inline_5bbbfebc.sql
+08:11:06.637297 [debug]: Finished rendering [  0.01s] model default.inline [success]
+08:11:06.637384 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+08:11:06.637493 [info ]: Started analyzing (1 nodes)
+08:11:06.637538 [debug]: Started analyzing model default.inline
+08:11:06.675094 [debug]: Finished analyzing [  0.04s] model default.inline [success]
+08:11:06.675135 [info ]: Finished analyzing [  0.04s] (1 nodes, 0 skipped, 0 errors)
+08:11:06.675166 [info ]: Started running (1 nodes)
+08:11:06.675179 [info ]: Started running model default.inline
+08:11:06.675863 [debug]: Databricks driver resolved: databricks 0.21.0.dev+dbt0.21.13
+08:11:10.218436 [debug]: Query executed on node unknown:
+
+  
+  SELECT table_catalog, table_schema, table_name FROM danny_dbt_dev.information_schema.tables WHERE table_schema IN ('source','gold','default') ORDER BY table_schema, table_name
+  
+  limit 200
+
+08:11:10.233819 [info ]: Query show_sql_operation_inline
+┌───────────────┬──────────────┬───────────────────┐
+│ table_catalog ┆ table_schema ┆ table_name        │
+╞═══════════════╪══════════════╪═══════════════════╡
+│ danny_dbt_dev ┆ default      ┆ bronze_customer   │
+│ danny_dbt_dev ┆ default      ┆ bronze_date       │
+│ danny_dbt_dev ┆ default      ┆ bronze_product    │
+│ danny_dbt_dev ┆ default      ┆ bronze_returns    │
+│ danny_dbt_dev ┆ default      ┆ bronze_sales      │
+│ danny_dbt_dev ┆ default      ┆ bronze_store      │
+│ danny_dbt_dev ┆ gold         ┆ gold_items        │
+│ danny_dbt_dev ┆ gold         ┆ source_gold_items │
+│ danny_dbt_dev ┆ source       ┆ dim_customer      │
+│ danny_dbt_dev ┆ source       ┆ dim_date          │
+│ danny_dbt_dev ┆ source       ┆ dim_product       │
+│ danny_dbt_dev ┆ source       ┆ dim_store         │
+│ danny_dbt_dev ┆ source       ┆ fact_returns      │
+│ danny_dbt_dev ┆ source       ┆ fact_sales        │
+│ danny_dbt_dev ┆ source       ┆ items             │
+└───────────────┴──────────────┴───────────────────┘
+15 rows.
+08:11:10.234362 [info ]: Finished running [  3.56s] model default.inline [success]
+08:11:10.234404 [info ]: Finished running [  3.56s] (1 nodes, 0 skipped, 0 errors)
+08:11:10.234517 [info ]:  Succeeded model default.inline (ephemeral) [1 of 1 in 3.60s]
+08:11:10.392063 [info ]: New version available 2.0.8 (run `dbt system update`)
+08:11:10.597045 [info ]: 
+==================== Execution Summary =====================
+Finished 'show' successfully for target 'dev' [5.2s]
+==================== 2026-10-09T08:12:02.267088Z | 01a11fb8-1d55-7f73-adfc-bdebcb350ea7 ====================
+08:12:02.267368 [info ]: dbt 2.0.6
+08:12:02.267882 [info ]: Started loading project
+08:12:02.273308 [info ]: Loading ~/.dbt/profiles.yml
+08:12:02.290957 [debug]:    Started loading packages
+08:12:02.299509 [debug]:     Loaded [  0.01s] packages
+08:12:02.304107 [info ]: Finished loading project [  0.04s]
+08:12:02.305718 [info ]: Started parsing
+08:12:02.431136 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/properties.yml [  0.00s]
+08:12:02.432638 [debug]: Finished parsing Dbt_Dany_Project/models/source/sources.yml [  0.00s]
+08:12:02.433544 [debug]: Finished parsing Dbt_Dany_Project/snapshots/gold_items.yml [  0.00s]
+08:12:02.434354 [debug]: Finished parsing target\inline_078d93aa.sql [  0.00s]
+08:12:02.443073 [debug]: Finished parsing Dbt_Dany_Project/snapshots/gold_items.yml:2:11 (gold_items) [  0.00s]
+08:12:02.445545 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_customer.sql [  0.00s]
+08:12:02.446639 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_date.sql [  0.00s]
+08:12:02.447613 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_product.sql [  0.00s]
+08:12:02.448512 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_returns.sql [  0.00s]
+08:12:02.449958 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_sales.sql [  0.00s]
+08:12:02.450874 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_store.sql [  0.00s]
+08:12:03.003458 [info ]: Finished parsing [  0.70s]
+08:12:03.005810 [info ]: Started scheduling
+08:12:03.006523 [info ]: Finished scheduling [  0.00s]
+08:12:03.020620 [info ]: Started building task graph
+08:12:03.020951 [info ]: Finished building task graph [  0.00s]
+08:12:03.364071 [info ]: Started rendering (1 nodes)
+08:12:03.364151 [info ]: Started model default.inline
+08:12:03.364190 [debug]: Started rendering model default.inline
+08:12:03.368910 [debug]: Compiled SQL for node model..inline at target\compiled\target\inline_078d93aa.sql
+08:12:03.369394 [debug]: Finished rendering [  0.01s] model default.inline [success]
+08:12:03.369449 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+08:12:03.369506 [info ]: Started analyzing (1 nodes)
+08:12:03.369529 [debug]: Started analyzing model default.inline
+08:12:03.387514 [debug]: Finished analyzing [  0.02s] model default.inline [success]
+08:12:03.387553 [info ]: Finished analyzing [  0.02s] (1 nodes, 0 skipped, 0 errors)
+08:12:03.387587 [info ]: Started running (1 nodes)
+08:12:03.387599 [info ]: Started running model default.inline
+08:12:03.388288 [debug]: Databricks driver resolved: databricks 0.21.0.dev+dbt0.21.13
+08:12:06.265409 [debug]: Query executed on node unknown:
+
+  
+  SELECT column_name, data_type FROM danny_dbt_dev.information_schema.columns WHERE table_schema='source' AND table_name='items' ORDER BY ordinal_position
+  
+  limit 50
+
+08:12:06.275153 [info ]: Query show_sql_operation_inline
+┌─────────────┬───────────┐
+│ column_name ┆ data_type │
+╞═════════════╪═══════════╡
+│ id          ┆ INT       │
+│ name        ┆ STRING    │
+│ category    ┆ STRING    │
+│ updateDate  ┆ TIMESTAMP │
+└─────────────┴───────────┘
+4 rows.
+08:12:06.275332 [info ]: Finished running [  2.89s] model default.inline [success]
+08:12:06.275364 [info ]: Finished running [  2.89s] (1 nodes, 0 skipped, 0 errors)
+08:12:06.275384 [info ]:  Succeeded model default.inline (ephemeral) [1 of 1 in 2.91s]
+08:12:06.367289 [info ]: New version available 2.0.8 (run `dbt system update`)
+08:12:06.595197 [info ]: 
+==================== Execution Summary =====================
+Finished 'show' successfully for target 'dev' [4.3s]
+==================== 2026-10-09T08:12:07.700863Z | 01a11fb8-328e-7673-9914-4c95d34c5282 ====================
+08:12:07.701296 [info ]: dbt 2.0.6
+08:12:07.702968 [info ]: Started loading project
+08:12:07.718833 [info ]: Loading ~/.dbt/profiles.yml
+08:12:07.755831 [debug]:    Started loading packages
+08:12:07.770831 [debug]:     Loaded [  0.02s] packages
+08:12:07.779335 [info ]: Finished loading project [  0.08s]
+08:12:07.781040 [info ]: Started parsing
+08:12:07.954784 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/properties.yml [  0.00s]
+08:12:07.956764 [debug]: Finished parsing Dbt_Dany_Project/models/source/sources.yml [  0.00s]
+08:12:07.958651 [debug]: Finished parsing Dbt_Dany_Project/snapshots/gold_items.yml [  0.00s]
+08:12:07.961254 [debug]: Finished parsing target\inline_51d8ed0b.sql [  0.01s]
+08:12:07.975301 [debug]: Finished parsing Dbt_Dany_Project/snapshots/gold_items.yml:2:11 (gold_items) [  0.00s]
+08:12:07.980289 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_customer.sql [  0.00s]
+08:12:07.982129 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_date.sql [  0.00s]
+08:12:07.983714 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_product.sql [  0.00s]
+08:12:07.985187 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_returns.sql [  0.00s]
+08:12:07.987073 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_sales.sql [  0.00s]
+08:12:07.988341 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_store.sql [  0.00s]
+08:12:08.541804 [info ]: Finished parsing [  0.76s]
+08:12:08.544378 [info ]: Started scheduling
+08:12:08.544820 [info ]: Finished scheduling [  0.00s]
+08:12:08.555446 [info ]: Started building task graph
+08:12:08.555688 [info ]: Finished building task graph [  0.00s]
+08:12:08.931638 [info ]: Started rendering (1 nodes)
+08:12:08.931713 [info ]: Started model default.inline
+08:12:08.931745 [debug]: Started rendering model default.inline
+08:12:08.936417 [debug]: Compiled SQL for node model..inline at target\compiled\target\inline_51d8ed0b.sql
+08:12:08.936823 [debug]: Finished rendering [  0.01s] model default.inline [success]
+08:12:08.936870 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+08:12:08.936928 [info ]: Started analyzing (1 nodes)
+08:12:08.936950 [debug]: Started analyzing model default.inline
+08:12:08.953672 [debug]: Finished analyzing [  0.02s] model default.inline [success]
+08:12:08.953713 [info ]: Finished analyzing [  0.02s] (1 nodes, 0 skipped, 0 errors)
+08:12:08.953744 [info ]: Started running (1 nodes)
+08:12:08.953756 [info ]: Started running model default.inline
+08:12:08.954308 [debug]: Databricks driver resolved: databricks 0.21.0.dev+dbt0.21.13
+08:12:11.890394 [debug]: Query executed on node unknown:
+
+  
+  SELECT column_name, data_type FROM danny_dbt_dev.information_schema.columns WHERE table_schema='gold' AND table_name='gold_items' ORDER BY ordinal_position
+  
+  limit 50
+
+08:12:11.908916 [info ]: Query show_sql_operation_inline
+┌────────────────┬───────────┐
+│ column_name    ┆ data_type │
+╞════════════════╪═══════════╡
+│ id             ┆ INT       │
+│ name           ┆ STRING    │
+│ category       ┆ STRING    │
+│ updateDate     ┆ TIMESTAMP │
+│ dbt_scd_id     ┆ STRING    │
+│ dbt_updated_at ┆ TIMESTAMP │
+│ dbt_valid_from ┆ TIMESTAMP │
+│ dbt_valid_to   ┆ TIMESTAMP │
+└────────────────┴───────────┘
+8 rows.
+08:12:11.909794 [info ]: Finished running [  2.96s] model default.inline [success]
+08:12:11.909858 [info ]: Finished running [  2.96s] (1 nodes, 0 skipped, 0 errors)
+08:12:11.909894 [info ]:  Succeeded model default.inline (ephemeral) [1 of 1 in 2.98s]
+08:12:12.286590 [info ]: New version available 2.0.8 (run `dbt system update`)
+08:12:12.518215 [info ]: 
+==================== Execution Summary =====================
+Finished 'show' successfully for target 'dev' [4.8s]
+==================== 2026-10-09T08:12:46.722436Z | 01a11fb8-cacc-7041-b7e6-d2648ba795d5 ====================
+08:12:46.722865 [info ]: dbt 2.0.6
+08:12:46.726899 [info ]: Started loading project
+08:12:46.870998 [info ]: Loading ~/.dbt/profiles.yml
+08:12:46.933933 [debug]:    Started loading packages
+08:12:46.954348 [debug]:     Loaded [  0.02s] packages
+08:12:46.971598 [info ]: Finished loading project [  0.24s]
+08:12:46.973702 [info ]: Started parsing
+08:12:47.300971 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/properties.yml [  0.00s]
+08:12:47.303740 [debug]: Finished parsing Dbt_Dany_Project/models/source/sources.yml [  0.00s]
+08:12:47.305524 [debug]: Finished parsing Dbt_Dany_Project/snapshots/gold_items.yml [  0.00s]
+08:12:47.309836 [debug]: Finished parsing target\inline_acef8d3c.sql [  0.00s]
+08:12:47.330967 [debug]: Finished parsing Dbt_Dany_Project/snapshots/gold_items.yml:2:11 (gold_items) [  0.01s]
+08:12:47.338480 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_customer.sql [  0.01s]
+08:12:47.340603 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_date.sql [  0.00s]
+08:12:47.342816 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_product.sql [  0.00s]
+08:12:47.345429 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_returns.sql [  0.00s]
+08:12:47.349552 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_sales.sql [  0.00s]
+08:12:47.352022 [debug]: Finished parsing Dbt_Dany_Project/models/bronze/bronze_store.sql [  0.00s]
+08:12:48.284088 [info ]: Finished parsing [  1.31s]
+08:12:48.289032 [info ]: Started scheduling
+08:12:48.289597 [info ]: Finished scheduling [  0.00s]
+08:12:48.310616 [info ]: Started building task graph
+08:12:48.311666 [info ]: Finished building task graph [  0.00s]
+08:12:48.829932 [info ]: Started rendering (1 nodes)
+08:12:48.830127 [info ]: Started model default.inline
+08:12:48.830198 [debug]: Started rendering model default.inline
+08:12:48.836663 [debug]: Compiled SQL for node model..inline at target\compiled\target\inline_acef8d3c.sql
+08:12:48.837916 [debug]: Finished rendering [  0.01s] model default.inline [success]
+08:12:48.837980 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+08:12:48.838054 [info ]: Started analyzing (1 nodes)
+08:12:48.838083 [debug]: Started analyzing model default.inline
+08:12:49.606075 [debug]: Finished analyzing [  0.77s] model default.inline [success]
+08:12:49.606174 [info ]: Finished analyzing [  0.77s] (1 nodes, 0 skipped, 0 errors)
+08:12:49.606247 [info ]: Started running (1 nodes)
+08:12:49.606279 [info ]: Started running model default.inline
+08:12:49.607724 [debug]: Databricks driver resolved: databricks 0.21.0.dev+dbt0.21.13
+08:12:54.273671 [debug]: Query executed on node unknown:
+
+  
+  SELECT 'source.items' AS tbl, COUNT(*) AS rows, COUNT(DISTINCT id) AS distinct_ids, MIN(updateDate) AS min_upd, MAX(updateDate) AS max_upd FROM danny_dbt_dev.source.items UNION ALL SELECT 'gold.gold_items', COUNT(*), COUNT(DISTINCT id), MIN(dbt_valid_from), MAX(dbt_valid_to) FROM danny_dbt_dev.gold.gold_items UNION ALL SELECT 'gold.source_gold_items', COUNT(*), COUNT(DISTINCT id), NULL, NULL FROM danny_dbt_dev.gold.source_gold_items
+  
+  limit 10
+
+08:12:54.301829 [info ]: Query show_sql_operation_inline
+┌────────────────────────┬──────┬──────────────┬─────────────────────────────┬─────────────────────────────┐
+│ tbl                    ┆ rows ┆ distinct_ids ┆ min_upd                     ┆ max_upd                     │
+╞════════════════════════╪══════╪══════════════╪═════════════════════════════╪═════════════════════════════╡
+│ source.items           ┆ 4    ┆ 3            ┆ 2026-10-09T06:41:49.997376Z ┆ 2026-10-09T07:12:05.194896Z │
+│ gold.gold_items        ┆ 4    ┆ 3            ┆ 2026-10-09T06:41:49.997376Z ┆ 9999-12-31T00:00:00Z        │
+│ gold.source_gold_items ┆ 3    ┆ 3            ┆                             ┆                             │
+└────────────────────────┴──────┴──────────────┴─────────────────────────────┴─────────────────────────────┘
+3 rows.
+08:12:54.302170 [info ]: Finished running [  4.70s] model default.inline [success]
+08:12:54.302217 [info ]: Finished running [  4.70s] (1 nodes, 0 skipped, 0 errors)
+08:12:54.302239 [info ]:  Succeeded model default.inline (ephemeral) [1 of 1 in 5.47s]
+08:12:54.453094 [info ]: New version available 2.0.8 (run `dbt system update`)
+08:12:54.660542 [info ]: 
+==================== Execution Summary =====================
+Finished 'show' successfully for target 'dev' [7.9s]

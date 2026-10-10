@@ -1,0 +1,1 @@
+SELECT column_name, data_type FROM danny_dbt_dev.information_schema.columns WHERE table_schema='source' AND table_name='items' ORDER BY ordinal_position
