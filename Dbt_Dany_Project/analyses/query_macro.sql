@@ -1,0 +1,1 @@
+select {{ multiple_columns(10, 20) }} as result

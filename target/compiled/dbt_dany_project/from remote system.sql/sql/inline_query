@@ -1,1 +1,1 @@
-select * from `danny_dbt_dev`.`source`.`gold_items` where 1 = 0
+select * from `danny_dbt_dev`.`bronze`.`bronze_returns` where 1 = 0

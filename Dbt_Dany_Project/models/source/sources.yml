@@ -9,9 +9,4 @@ sources:
       - name: dim_product
       - name: dim_date
       - name: dim_store
-
-  - name: source__gold_items
-    database: '{{ target.catalog }}'
-    schema: source
-    tables:
-      - name: gold_items
+      - name: items

@@ -1,0 +1,24 @@
+
+  
+    
+        create or replace table `danny_dbt_dev`.`gold`.`source_gold_items`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      with dedup_query as (
+    select
+        *,
+        ROW_NUMBER() over (partition by id order by updateDate desc) as deduplication_id
+    from
+        `danny_dbt_dev`.`source`.`items`
+)
+select id,name,category,updateDate from dedup_query where deduplication_id = 1
+  
