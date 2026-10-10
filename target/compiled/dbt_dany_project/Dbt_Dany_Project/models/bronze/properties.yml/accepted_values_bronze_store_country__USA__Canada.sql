@@ -8,7 +8,7 @@ with all_values as (
         country as value_field,
         count(*) as n_records
 
-    from `danny_dbt_dev`.`bronze`.`bronze_store`
+    from `danny_dbt_prod`.`bronze`.`bronze_store`
     group by country
 
 )

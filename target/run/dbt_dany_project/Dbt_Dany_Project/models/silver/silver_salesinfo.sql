@@ -1,7 +1,7 @@
 
   
     
-        create or replace table `danny_dbt_dev`.`silver`.`silver_salesinfo`
+        create or replace table `danny_dbt_prod`.`silver`.`silver_salesinfo`
       
       
   using delta
@@ -23,21 +23,21 @@
  as calculated_gross_amount,
         gross_amount,
         payment_method
-     from `danny_dbt_dev`.`bronze`.`bronze_sales`
+     from `danny_dbt_prod`.`bronze`.`bronze_sales`
 ),
 
 products as (
     select 
         product_sk,
         category
-     from `danny_dbt_dev`.`bronze`.`bronze_product`
+     from `danny_dbt_prod`.`bronze`.`bronze_product`
 ),
 
 customer as (
     select 
         customer_sk,
         gender 
-    from `danny_dbt_dev`.`bronze`.`bronze_customer`
+    from `danny_dbt_prod`.`bronze`.`bronze_customer`
 ),
 
 gender_category_sales as (

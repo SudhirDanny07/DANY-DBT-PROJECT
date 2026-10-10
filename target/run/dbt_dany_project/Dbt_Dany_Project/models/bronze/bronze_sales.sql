@@ -1,8 +1,8 @@
 
   
   
-  create or replace view `danny_dbt_dev`.`bronze`.`bronze_sales`
+  create or replace view `danny_dbt_prod`.`bronze`.`bronze_sales`
   
   as (
-    select * from `danny_dbt_dev`.`source`.`fact_sales`
+    select * from `danny_dbt_prod`.`source`.`fact_sales`
   )

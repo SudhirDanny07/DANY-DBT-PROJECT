@@ -1,7 +1,7 @@
 
   
     
-        create or replace table `danny_dbt_dev`.`gold`.`source_gold_items`
+        create or replace table `danny_dbt_prod`.`gold`.`source_gold_items`
       
       
   using delta
@@ -18,7 +18,7 @@
         *,
         ROW_NUMBER() over (partition by id order by updateDate desc) as deduplication_id
     from
-        `danny_dbt_dev`.`source`.`items`
+        `danny_dbt_prod`.`source`.`items`
 )
 select id,name,category,updateDate from dedup_query where deduplication_id = 1
   

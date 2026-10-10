@@ -1,21 +1,37 @@
 
-      merge into `danny_dbt_dev`.`gold`.`gold_items` as DBT_INTERNAL_DEST
+      
+  
     
-      using `gold_items__dbt_tmp` as DBT_INTERNAL_SOURCE
+        create or replace table `danny_dbt_prod`.`gold`.`gold_items`
+      
+      
+  using delta
+      
+      
+      
+      
+      
+      
+      
+      as
+      
     
-    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
-    when matched
-     
-       and ( DBT_INTERNAL_DEST.dbt_valid_to = to_date('9999-12-31') or
-             DBT_INTERNAL_DEST.dbt_valid_to is null )
-     
-     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
-        then update
-        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
 
-    when not matched
-     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
-        then insert *
-    ;
+    select *,
+        md5(coalesce(cast(id as string ), '')
+         || '|' || coalesce(cast(updateDate as string ), '')
+        ) as dbt_scd_id,
+        updateDate as dbt_updated_at,
+        updateDate as dbt_valid_from,
+        
+  
+  coalesce(nullif(updateDate, updateDate), to_date('9999-12-31'))
+  as dbt_valid_to
+from (
+        select * from `danny_dbt_prod`.`gold`.`source_gold_items`
+    ) sbq
 
+
+
+  
   

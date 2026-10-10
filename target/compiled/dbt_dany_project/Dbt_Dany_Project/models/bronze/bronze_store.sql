@@ -1,1 +1,1 @@
-select * from `danny_dbt_dev`.`source`.`dim_store`
+select * from `danny_dbt_prod`.`source`.`dim_store`

@@ -2,25 +2,25 @@ with returns as (
     select sales_id,
            product_sk,
            returned_qty
-    from `danny_dbt_dev`.`bronze`.`bronze_returns`
+    from `danny_dbt_prod`.`bronze`.`bronze_returns`
 ),
 
 sales as (
     select sales_id,
            customer_sk
-    from `danny_dbt_dev`.`bronze`.`bronze_sales`
+    from `danny_dbt_prod`.`bronze`.`bronze_sales`
 ),
 
 products as (
     select product_sk,
            category
-    from `danny_dbt_dev`.`bronze`.`bronze_product`
+    from `danny_dbt_prod`.`bronze`.`bronze_product`
 ),
 
 customers as (
     select customer_sk,
            gender
-    from `danny_dbt_dev`.`bronze`.`bronze_customer`
+    from `danny_dbt_prod`.`bronze`.`bronze_customer`
 ),
 
 gender_category_returns as (

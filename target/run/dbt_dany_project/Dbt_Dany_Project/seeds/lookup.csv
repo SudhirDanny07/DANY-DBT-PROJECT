@@ -2,7 +2,7 @@
     
     
     
-    create or replace table `danny_dbt_dev`.`bronze`.`lookup` (`customer_id` bigint ,`customer_name` string ,`customer_email` string )
+    create  table `danny_dbt_prod`.`bronze`.`lookup` (`customer_id` bigint ,`customer_name` string ,`customer_email` string )
     
   using delta
     
@@ -13,7 +13,7 @@
   ;
     -- dbt seed --
     
-          insert overwrite `danny_dbt_dev`.`bronze`.`lookup` values
+          insert overwrite `danny_dbt_prod`.`bronze`.`lookup` values
           (%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
       
 
